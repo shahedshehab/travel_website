@@ -1,0 +1,58 @@
+:root{
+    font-family: "Montserrat", sans-serif;
+    --primaryColor:#8DD3BB;
+    --secondaryColor:#112211;
+}
+body{
+    height: 5000px;
+}
+.body_bg{
+    background-image:url("../img/Home-page/home-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 30px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    /*filter: brightness(.75);*/
+}
+.home-btn .btn{
+    color: white;
+    transition: all .5s;
+}
+.home-btn .btn:hover{
+    color:var(--secondaryColor);
+    background-color: white;
+    border-color: white;
+}
+.hero-content h1{
+    font-size: 45px;
+}
+.hero-content h2{
+    font-size: 80px;
+}
+.sub-hero{
+    background-color: rgb(177, 171, 171);
+    height: 280px;
+    width: 1232px;
+    border-radius: 20px;
+    position: relative;
+    left: 104px;
+    bottom: -170px;
+}
+.sub-hero a{
+    color: var(--secondaryColor);
+}
+.sub-hero .line{
+    background-color: #D7E2EE;
+    width: 3px;
+    height: 28px;
+}
+.under_line{
+    background-color: var(--primaryColor);
+    width: 80px;
+    height: 3px;
+    margin-left: 18px;
+    
+}
