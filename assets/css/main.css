@@ -1,14 +1,16 @@
-:root{
+:root {
     font-family: "Montserrat", sans-serif;
     --primary-font: "Montserrat", sans-serif;
-    --primaryColor:#8DD3BB;
-    --secondaryColor:#112211;
+    --primaryColor: #8DD3BB;
+    --secondaryColor: #112211;
 }
-body{
+
+body {
     height: 5000px;
 }
-.body_bg{
-    background-image:url("../img/Home-page/nav-hero/home-img.webp");
+
+.body_bg {
+    background-image: url("../img/Home-page/nav-hero/home-img.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,55 +18,71 @@ body{
     margin: 30px;
     border-radius: 20px;
     font-family: "Montserrat", sans-serif;
+    opacity: .95;
     /*filter: brightness(.75);*/
 }
-.home-btn .btn{
+
+.home-btn .btn {
     color: white;
     transition: all .5s;
 }
-.home-btn .btn:hover{
-    color:var(--secondaryColor);
+
+.home-btn .btn:hover {
+    color: var(--secondaryColor);
     background-color: white;
     border-color: white;
 }
-.hero-content h1{
+.home-btn .user{
+    display: none;
+}
+
+.hero-content h1 {
     font-size: 45px;
 }
-.hero-content h2{
+
+.hero-content h2 {
     font-size: 80px;
 }
-.sub-hero{
+
+.sub-hero {
     background-color: #ffff;
-    
+
     border-radius: 20px;
     position: absolute;
     left: 210px;
     bottom: -70px;
 }
-.sub-hero a{
+
+.sub-hero a {
     color: var(--secondaryColor);
 }
-.sub-hero .line{
+
+.sub-hero .line {
     background-color: #D7E2EE;
     width: 3px;
     height: 28px;
 }
-.under_line{
+
+.under_line {
     background-color: var(--primaryColor);
     width: 80px;
     height: 3px;
     margin-left: 18px;
-    
+
 }
-.recording input{
+.subhero-form,.left-form,.right-form{
+    display: flex;
+}
+
+.recording input {
     padding: 10px 150px 10px 5px;
     font-size: 12px;
     border: 1px solid #79747E;
     border-radius: 5px;
-    
+
 }
 
-.recording label{
+.recording label {
     position: relative;
     padding: 0 2px;
     background-color: #ffff;
@@ -75,21 +93,23 @@ body{
     color: #79747E;
 }
 
-.recording .arrow{
+.recording .arrow {
     left: 260px;
     bottom: 30px;
 }
-.recording .arrow-drop{
+
+.recording .arrow-drop {
     left: 120px;
     bottom: 30px;
 }
-.sub-hero .btn-flight .btn{
+
+.sub-hero .btn-flight .btn {
     color: var(--secondaryColor);
     font-size: 14px;
     font-family: var(--primary-font);
 }
-.sub-hero .btn-flight .btn-primary
- {
+
+.sub-hero .btn-flight .btn-primary {
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
     border: none;
@@ -98,10 +118,104 @@ body{
     font-size: 12px;
     margin: 32px 32px 32px 0;
 }
-form{
+
+form {
     width: fit-content;
 }
-form .trip{
- padding: 10px 1px 10px 5px;  
+
+form .trip {
+    padding: 10px 1px 10px 5px;
 }
 
+@media screen and (max-width:1300px) {
+    .sub-hero {
+        left: 120px;
+    }
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    form .trip {
+        padding: 10px 1px 10px 5px;
+    }
+
+    .recording .arrow {
+        left: 190px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+  .body_bg {
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .sub-hero {
+        left: 10px;
+        bottom: -120px;
+    }
+
+} 
+
+
+@media screen and (max-width:992px) {
+    .body_bg {
+        margin: 0;
+        border-radius: 0;
+    }
+    .flight,.stays{
+        display: none;
+    }
+    .home-btn .btn{
+        display: none;
+    }
+    .home-btn .user{
+        display: block;
+        background-color: var(--primaryColor);
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        
+    }
+    .hero-content h1 {
+    font-size: 35px;
+}
+
+.hero-content h2 {
+    font-size: 60px;
+}
+.sub-hero {
+        left: 170px;
+        bottom: -120px;
+    }
+.recording input {
+        padding: 10px 60px 10px 5px;
+    }
+.recording .arrow {
+        left: 170px;
+    }
+    .subhero-form{
+    display: block;
+}
+.recording .arrow-drop {
+    left: 170px;
+}
+    
+}
+@media screen and (max-width:620px) {
+ .hero-content h1 {
+    font-size: 20px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+}
+.left-form,.right-form{
+    display: block;
+}
+.sub-hero {
+        left: 70px;
+        bottom: -150px;
+    }
+}
