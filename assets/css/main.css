@@ -134,7 +134,7 @@ form .trip {
 
 @media screen and (max-width:1300px) {
     .sub-hero {
-        left: 120px;
+        left: 140px;
     }
 
     .recording input {
@@ -157,7 +157,7 @@ form .trip {
     }
 
     .sub-hero {
-        left: 10px;
+        left: calc(100% - 920px);
         bottom: -120px;
     }
 
@@ -198,7 +198,7 @@ form .trip {
     }
 
     .sub-hero {
-        left: 170px;
+        left: calc(100% - 620px);
         bottom: -120px;
     }
 
@@ -239,15 +239,18 @@ form .trip {
 
     .left-form,
     .right-form {
-        display: block;
+        display: none;
     }
 
     .sub-hero {
-        left: 70px;
-        bottom: -150px;
+        left: calc(100% - 290px);
+        bottom: -10px;
     }
 
-
+.sub-hero .btn-flight .btn-primary{
+    justify-items: center;
+    margin: 0 0 10px 40px;
+}
 
 
 }
