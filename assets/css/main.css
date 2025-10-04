@@ -53,7 +53,7 @@ body {
     margin-top: 170px;
     place-self: center;
 
-    
+
 }
 
 .sub-hero a {
@@ -109,19 +109,23 @@ body {
     bottom: 30px;
 }
 
-.sub-hero .btn-flight .btn {
+.btn-flight .btn {
     color: var(--secondaryColor);
     font-size: 14px;
     font-family: var(--primary-font);
 }
 
-.sub-hero .btn-flight .btn-primary {
+.btn-flight .btn-primary {
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
     border: none;
     padding: 12px;
     font-family: var(--primary-font);
     font-size: 12px;
+
+}
+
+.sub-hero .btn-flight .btn-primary {
     margin: 32px 32px 32px 0;
 }
 
@@ -134,7 +138,7 @@ form .trip {
 }
 
 @media screen and (max-width:1300px) {
-    
+
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -155,7 +159,7 @@ form .trip {
         border-radius: 15px;
     }
 
-    
+
 
 }
 
@@ -193,7 +197,7 @@ form .trip {
         font-size: 60px;
     }
 
-    
+
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -218,7 +222,8 @@ form .trip {
     .suggested-places span {
         display: none;
     }
-    .sub-hero{
+
+    .sub-hero {
         margin-top: 120px;
     }
 
@@ -229,6 +234,7 @@ form .trip {
         margin: 0;
         border-radius: 0;
     }
+
     .hero-content h1 {
         font-size: 20px;
     }
@@ -242,14 +248,14 @@ form .trip {
         display: none;
     }
 
-    .sub-hero{
+    .sub-hero {
         margin-top: 265px;
     }
 
-.sub-hero .btn-flight .btn-primary{
-    justify-items: center;
-    margin: 0 0 10px 40px;
-}
+    .sub-hero .btn-flight .btn-primary {
+        justify-items: center;
+        margin: 0 0 10px 40px;
+    }
 
 
 }
@@ -278,19 +284,21 @@ form .trip {
 .suggested-places .items {
     display: flex;
 }
-.right-side .btn-second{
+
+.right-side .btn-second {
     display: none;
 }
 
 @media screen and (max-width:620px) {
-    .right-side .btn-first{
+    .right-side .btn-first {
         display: none;
     }
-    .right-side .btn-second{
-    display: block;
-    padding:  10px 5px;
-    
-}
+
+    .right-side .btn-second {
+        display: block;
+        padding: 10px 5px;
+
+    }
 
     .suggested-places h5 {
         font-size: 15px;
@@ -299,9 +307,23 @@ form .trip {
     .suggested-places a {
         font-size: 10px;
     }
+
     .suggested-places .col-md-3 img {
         padding: 0;
     }
-    
 
+
+}
+
+.travel-services img {
+    max-height: 450px;
+}
+
+.reviews .right-side .btn{
+    padding: 7px 10px;
+    font-size: 12px;
+}
+.reviews .card a{
+    color: var(--secondaryColor);
+    text-align: end;
 }
