@@ -48,11 +48,12 @@ body {
 
 .sub-hero {
     background-color: #ffff;
-
+    width: fit-content;
     border-radius: 20px;
-    position: absolute;
-    left: 210px;
-    bottom: -70px;
+    margin-top: 170px;
+    place-self: center;
+
+    
 }
 
 .sub-hero a {
@@ -133,9 +134,7 @@ form .trip {
 }
 
 @media screen and (max-width:1300px) {
-    .sub-hero {
-        left: 140px;
-    }
+    
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -152,22 +151,19 @@ form .trip {
 
 @media screen and (max-width:1100px) {
     .body_bg {
-        margin: 5px;
-        border-radius: 5px;
+        margin: 15px;
+        border-radius: 15px;
     }
 
-    .sub-hero {
-        left: calc(100% - 920px);
-        bottom: -120px;
-    }
+    
 
 }
 
 
 @media screen and (max-width:992px) {
     .body_bg {
-        margin: 0;
-        border-radius: 0;
+        margin: 5px;
+        border-radius: 5px;
     }
 
     .flight,
@@ -197,10 +193,7 @@ form .trip {
         font-size: 60px;
     }
 
-    .sub-hero {
-        left: calc(100% - 620px);
-        bottom: -120px;
-    }
+    
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -225,10 +218,17 @@ form .trip {
     .suggested-places span {
         display: none;
     }
+    .sub-hero{
+        margin-top: 120px;
+    }
 
 }
 
 @media screen and (max-width:620px) {
+    .body_bg {
+        margin: 0;
+        border-radius: 0;
+    }
     .hero-content h1 {
         font-size: 20px;
     }
@@ -242,9 +242,8 @@ form .trip {
         display: none;
     }
 
-    .sub-hero {
-        left: calc(100% - 290px);
-        bottom: -10px;
+    .sub-hero{
+        margin-top: 265px;
     }
 
 .sub-hero .btn-flight .btn-primary{
@@ -256,7 +255,7 @@ form .trip {
 }
 
 .suggested-places {
-    margin-top: 200px;
+    margin-top: 150px;
 
 }
 
