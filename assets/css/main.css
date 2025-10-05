@@ -315,8 +315,14 @@ form .trip {
 
 }
 
-.travel-services img {
+.travel-services .card { 
     max-height: 450px;
+}
+.travel-services .card img{
+    width: 100%;
+    min-height: 450px;
+    object-fit: cover;
+   
 }
 
 .reviews .right-side .btn{
