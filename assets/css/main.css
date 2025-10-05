@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 5000px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -325,6 +324,10 @@ form .trip {
    
 }
 
+.reviews{
+    padding-bottom: 250px;
+}
+
 .reviews .right-side .btn{
     padding: 7px 10px;
     font-size: 12px;
@@ -336,4 +339,106 @@ form .trip {
 
 .reviews .card{
     box-shadow: 15px 15px 2px #8dd3baa0;
+    
+}
+
+.footer{
+    background-color: var(--primaryColor);
+    padding-top: 200px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.sub-footer{
+    /* width: fit-content; */
+    background-color:#CDEAE1;
+    border-radius: 20px;
+    width:fit-content;
+    place-self: center;
+    position: absolute;
+    bottom: 220px; 
+}
+.sub-footer button{
+    background-color: var(--secondaryColor);
+    font-size: 12px;
+}
+.sub-footer p{
+    font-size: 15px;
+}
+.sub-footer input{
+    padding: 10px;
+    padding-right: 90px;
+    font-size: 12px;
+}
+.sub-footer img{
+    padding-left: 190px;
+}
+.footer .footer-item a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-size: 10px;
+    font-weight: 400;
+}
+.footer ,.footer-item h2{
+    font-size: 14px;
+}
+@media screen and (max-width:1400px){
+.sub-footer{
+    bottom: 275px;
+}
+.footer .left-side{
+    padding: 30px 0;
+}
+}
+@media screen and (max-width:1200px)
+{
+    .sub-footer img{
+    padding-left: 90px;
+    width: 300px;
+    height: 200px;
+    
+}
+.sub-footer{
+    bottom: 290px;
+}
+.footer-content{
+    padding: 20px 0;
+
+}
+}
+@media screen and (max-width:992px){
+    
+    .sub-footer{
+        position: static;
+        padding-bottom: 20px;
+    }
+    .footer-content{
+    padding: 0;
+
+}
+.footer{
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.footer .left-side{
+    padding: 30px 0;
+}
+
+
+
+}
+@media screen and (max-width:770px)
+{
+  .sub-footer img{
+        display: none;
+    }  
+    .sub-footer input{
+    padding: 8px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+.footer .right-side{
+    text-align: center;
+}
 }
