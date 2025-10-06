@@ -260,7 +260,7 @@ form .trip {
 }
 
 .suggested-places {
-    margin-top: 150px;
+    margin-top: 100px;
 
 }
 
@@ -288,6 +288,26 @@ form .trip {
     display: none;
 }
 
+@media screen and (max-width:980px) {
+    .suggested-places h5 {
+        font-size: 15px;
+    }
+
+    .suggested-places a {
+        font-size: 10px;
+    }
+
+    .suggested-places .col-md-3 img {
+        padding: 0;
+    }
+
+    .suggested-places .card-body {
+        padding: 6px;
+    }
+
+}
+
+
 @media screen and (max-width:620px) {
     .right-side .btn-first {
         display: none;
@@ -314,131 +334,159 @@ form .trip {
 
 }
 
-.travel-services .card { 
+.travel-services .card {
     max-height: 450px;
 }
-.travel-services .card img{
+
+.travel-services .card img {
     width: 100%;
     min-height: 450px;
     object-fit: cover;
-   
+
 }
 
-.reviews{
+.reviews {
     padding-bottom: 250px;
 }
 
-.reviews .right-side .btn{
+.reviews .right-side .btn {
     padding: 7px 10px;
     font-size: 12px;
 }
-.reviews .card a{
+
+.reviews .card a {
     color: var(--secondaryColor);
     text-align: end;
 }
 
-.reviews .card{
+.reviews .card {
     box-shadow: 15px 15px 2px #8dd3baa0;
-    
+
 }
 
-.footer{
+.footer {
     background-color: var(--primaryColor);
     padding-top: 200px;
     padding-bottom: 60px;
     position: relative;
 }
-.sub-footer{
+
+.sub-footer {
     /* width: fit-content; */
-    background-color:#CDEAE1;
+    background-color: #CDEAE1;
     border-radius: 20px;
-    width:fit-content;
+    width: fit-content;
     place-self: center;
     position: absolute;
-    bottom: 220px; 
+    bottom: 220px;
 }
-.sub-footer button{
+
+.sub-footer button {
     background-color: var(--secondaryColor);
     font-size: 12px;
 }
-.sub-footer p{
+
+.sub-footer p {
     font-size: 15px;
 }
-.sub-footer input{
+
+.sub-footer input {
     padding: 10px;
     padding-right: 90px;
     font-size: 12px;
 }
-.sub-footer img{
+
+.sub-footer img {
     padding-left: 190px;
 }
-.footer .footer-item a{
+
+.footer .footer-item a {
     text-decoration: none;
     color: var(--secondaryColor);
     font-size: 10px;
     font-weight: 400;
 }
-.footer ,.footer-item h2{
+
+.footer,
+.footer-item h2 {
     font-size: 14px;
 }
-@media screen and (max-width:1400px){
-.sub-footer{
-    bottom: 275px;
-}
-.footer .left-side{
-    padding: 30px 0;
-}
-}
-@media screen and (max-width:1200px)
-{
-    .sub-footer img{
-    padding-left: 90px;
-    width: 300px;
-    height: 200px;
-    
-}
-.sub-footer{
-    bottom: 290px;
-}
-.footer-content{
-    padding: 20px 0;
 
+@media screen and (max-width:1400px) {
+    .sub-footer {
+        bottom: 275px;
+    }
+
+    .footer .left-side {
+        padding: 30px 0;
+    }
+
+    .reviews {
+        padding-bottom: 170px;
+    }
 }
+
+@media screen and (max-width:1200px) {
+    .sub-footer img {
+        padding-left: 90px;
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .sub-footer {
+        bottom: 290px;
+    }
+
+    .footer-content {
+        padding: 20px 0;
+
+    }
 }
-@media screen and (max-width:992px){
-    
-    .sub-footer{
+
+@media screen and (max-width:992px) {
+
+    .sub-footer {
         position: static;
         padding-bottom: 20px;
     }
-    .footer-content{
-    padding: 0;
+
+    .footer-content {
+        padding: 0;
+
+    }
+
+    .reviews {
+        padding-bottom: 100px;
+    }
+
+    .footer {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .footer .left-side {
+        padding: 30px 0;
+    }
+
+
 
 }
-.footer{
-  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-}
-.footer .left-side{
-    padding: 30px 0;
-}
 
-
-
-}
-@media screen and (max-width:770px)
-{
-  .sub-footer img{
+@media screen and (max-width:770px) {
+    .sub-footer img {
         display: none;
-    }  
-    .sub-footer input{
-    padding: 8px;
-    padding-right: 20px;
-    font-size: 12px;
-}
-.footer .right-side{
-    text-align: center;
-}
+    }
+
+    .sub-footer input {
+        padding: 8px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .footer .right-side {
+        text-align: center;
+    }
 }
