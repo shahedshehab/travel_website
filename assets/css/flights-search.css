@@ -1,0 +1,226 @@
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --primaryColor: #8DD3BB;
+    --secondaryColor: #112211;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.second-color {
+    color: var(--secondaryColor);
+}
+
+nav .user {
+    display: none;
+}
+
+.home-btn .btn {
+    color: var(--secondaryColor);
+    transition: all .5s;
+}
+
+.home-btn .btn:hover {
+    color: #ffff;
+    background-color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+}
+
+@media screen and (max-width:992px) {
+
+    .flight a,
+    .stays a {
+        display: none;
+    }
+
+    .home-btn .btn {
+        display: none;
+    }
+
+    .home-btn .user {
+        display: block;
+        background-color: var(--primaryColor);
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+
+    }
+}
+
+.hero {
+    background-image: url("../img/flights_search-page/hero/airplane.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+}
+
+.hero-content p {
+    font-size: 25px;
+}
+
+@media screen and (max-width:992px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .hero-content h1 {
+        font-size: 20px;
+    }
+}
+
+.sub-hero {
+    background-color: #ffff;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: -170px;
+    place-self: center;
+}
+
+.sub-hero a {
+    color: var(--secondaryColor);
+}
+
+.subhero-form,
+.left-form,
+.right-form {
+    display: flex;
+}
+
+.recording input {
+    padding: 10px 150px 10px 5px;
+    font-size: 12px;
+    border: 1px solid #79747E;
+    border-radius: 5px;
+
+}
+
+.recording label {
+    position: relative;
+    padding: 0 2px;
+    background-color: #ffff;
+    left: 15px;
+    top: 9px;
+    width: fit-content;
+    font-size: 13px;
+    color: #79747E;
+}
+
+.recording .arrow {
+    left: 260px;
+    bottom: 30px;
+}
+
+.recording .arrow-drop {
+    left: 120px;
+    bottom: 30px;
+}
+
+.btn-flight .btn {
+    color: var(--secondaryColor);
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+
+.btn-flight .btn-primary {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    padding: 12px;
+    font-family: var(--primary-font);
+    font-size: 12px;
+
+}
+
+.sub-hero .btn-flight .btn-primary {
+    margin: 32px 32px 32px 0;
+}
+
+
+form .trip {
+    padding: 10px 1px 10px 5px;
+}
+
+@media screen and (max-width:1300px) {
+
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    form .trip {
+        padding: 10px 1px 10px 5px;
+    }
+
+    .recording .arrow {
+        left: 190px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .body_bg {
+        margin: 15px;
+        border-radius: 15px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:992px) {
+
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    .recording .arrow {
+        left: 170px;
+    }
+
+    .subhero-form {
+        display: block;
+    }
+
+    .recording .arrow-drop {
+        left: 170px;
+    }
+
+    .suggested-places .items {
+        display: block;
+    }
+
+    .suggested-places span {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:620px) {
+
+    .left-form,
+    .right-form {
+        display: none;
+    }
+
+    .sub-hero .btn-flight .btn-primary {
+        justify-items: center;
+        margin: 0 0 10px 40px;
+    }
+
+
+}
+

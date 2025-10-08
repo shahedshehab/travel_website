@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flights-search</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- my css file -->
+    <link rel="stylesheet" href="./assets/css/flights-search.css">
+</head>
+
+<body>
+    <!-- start nabvar section -->
+    <nav class="navbar position-relative ">
+        <div class="container justify-content-between">
+            <div class="reservation d-flex gap-3">
+                <div class="flight">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                        </svg>
+                    </a>
+                    <a class="text-decoration-none second-color fw-semibold" href="#">Find Flight</a>
+                </div>
+                <div class="stays">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
+                        </svg>
+                    </a>
+                    <a class="text-decoration-none second-color fw-semibold" href="#">Find Stays</a>
+                </div>
+            </div>
+            <a class="navbar-brand " href="#">
+                <img src="./assets/img/flights_search-page/navbar/Logo.png" alt="Logo" width="130" height="40"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <div class="home-btn d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn ">Login</button>
+                <button type="button" class="btn ">Sign up</button>
+                <button class="user"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#fafafa"
+                            d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                    </svg></button>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar section -->
+    <main>
+        <!-- start hero and subhero section -->
+        <section class="hero pb-5">
+            <div class="container">
+                <div class="hero-content text-white d-flex flex-column pt-5">
+                    <h1 class="fw-bold w-50 pt-4">Make your travel whishlist, we’ll do the rest</h1>
+                    <p class=" w-50">Special offers to suit your plan</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sub-hero ">
+            <div class="reservation d-flex p-3 gap-4">
+                <p class="fw-semibold fs-4">Where are you flying? </p>
+            </div>
+
+            <div class="recording pt-4">
+                <div class="container">
+                    <div class="subhero-form gap-3">
+
+                        <div class="left-form gap-3">
+                            <form method="post" class="d-flex flex-column ">
+                                <label>From-To</label>
+                                <input type="text" placeholder="Lahore - Karachi">
+                                <svg class="arrow position-relative" xmlns="http://www.w3.org/2000/svg" height="20"
+                                    width="20"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000000"
+                                        d="M566.6 470.6L470.6 566.6C461.4 575.8 447.7 578.5 435.7 573.5C423.7 568.5 416 556.9 416 544L416 480L96 480C78.3 480 64 465.7 64 448C64 430.3 78.3 416 96 416L416 416L416 352C416 339.1 423.8 327.4 435.8 322.4C447.8 317.4 461.5 320.2 470.7 329.3L566.7 425.3C579.2 437.8 579.2 458.1 566.7 470.6zM73.4 214.6C60.9 202.1 60.9 181.8 73.4 169.3L169.4 73.3C178.6 64.1 192.3 61.4 204.3 66.4C216.3 71.4 224 83.1 224 96L224 160L544 160C561.7 160 576 174.3 576 192C576 209.7 561.7 224 544 224L224 224L224 288C224 300.9 216.2 312.6 204.2 317.6C192.2 322.6 178.5 319.8 169.3 310.7L73.3 214.7z" />
+                                </svg>
+                            </form>
+
+
+                            <form method="post" class="d-flex flex-column">
+                                <label>Trip</label>
+                                <input type="text" placeholder="Return" class="trip">
+                                <svg class="arrow-drop position-relative" xmlns="http://www.w3.org/2000/svg" height="20"
+                                    width="20"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#000000"
+                                        d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
+                                </svg>
+                            </form>
+                        </div>
+
+
+
+                        <div class="right-form gap-3">
+                            <form method="post" class="d-flex flex-column">
+                                <label>Depart-Return</label>
+                                <input type="text" placeholder="07 Nov 22 - 13 Nov 22">
+                            </form>
+
+
+                            <form method="post" class="d-flex flex-column">
+                                <label>Passenger-class</label>
+                                <input type="text" placeholder="1 Passenger, Economy">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn  me-md-2" type="button">+ Add Promo Code</button>
+                <div class="btn-flight">
+
+                    <button class="btn btn-primary"> <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M568.4 37.7C578.2 34.2 589 36.7 596.4 44C603.8 51.3 606.2 62.2 602.7 72L424.7 568.9C419.7 582.8 406.6 592 391.9 592C377.7 592 364.9 583.4 359.6 570.3L295.4 412.3C290.9 401.3 292.9 388.7 300.6 379.7L395.1 267.3C400.2 261.2 399.8 252.3 394.2 246.7C388.6 241.1 379.6 240.7 373.6 245.8L261.2 340.1C252.1 347.7 239.6 349.7 228.6 345.3L70.1 280.8C57 275.5 48.4 262.7 48.4 248.5C48.4 233.8 57.6 220.7 71.5 215.7L568.4 37.7z" />
+                        </svg> Show Flights</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- end hero and subhero section -->
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 :root {
-
     --primary-font: "Montserrat", sans-serif;
     --primaryColor: #8DD3BB;
     --secondaryColor: #112211;
@@ -128,9 +127,6 @@ body {
     margin: 32px 32px 32px 0;
 }
 
-form {
-    width: fit-content;
-}
 
 form .trip {
     padding: 10px 1px 10px 5px;
@@ -372,7 +368,7 @@ form .trip {
 }
 
 .sub-footer {
-    /* width: fit-content; */
+
     background-color: #CDEAE1;
     border-radius: 20px;
     width: fit-content;
