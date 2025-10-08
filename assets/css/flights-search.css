@@ -224,3 +224,25 @@ form .trip {
 
 }
 
+.right-side .btn {
+    background-color: #ffff;
+    border-color: var(--primaryColor);
+    padding: 12px 16px;
+    color: var(--secondaryColor);
+}
+
+.right-side .btn-second {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .right-side .btn-first {
+        display: none;
+    }
+
+    .right-side .btn-second {
+        display: block;
+        padding: 10px 5px;
+
+    }
+}
