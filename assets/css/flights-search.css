@@ -246,3 +246,13 @@ form .trip {
 
     }
 }
+.choices .card{
+    max-height: 420px;
+}
+.choices img{
+    min-height: 420px;
+}
+
+.choices-content .left p{
+    font-size: 13px;
+}
