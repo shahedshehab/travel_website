@@ -219,6 +219,7 @@ form .trip {
     .body_bg {
         margin: 0;
         border-radius: 0;
+        height: 400px;
     }
 
     .hero-content h1 {
@@ -318,8 +319,10 @@ form .trip {
         padding: 0;
     }
     .suggested-places .card{
-        width:fit-content;
+        
+       width:fit-content;
     }
+    
 
 
 }
