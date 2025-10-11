@@ -261,24 +261,32 @@ form .trip {
 
 .Backpacking .content {
     background-color: var(--primaryColor);
+
 }
 
 .Backpacking .content .price {
     height: fit-content;
 }
 
-.Backpacking img {
+.Backpacking .img {
     max-width: 300px;
-    height: fit-content;
-}
-.Backpacking .content{
-    width: fit-content;
 }
 
 
-@media screen and (max-width:470px){
-    .Backpacking .content h1{
+
+@media screen and (max-width:1400px) {
+
+    .Backpacking .up img,
+    .down img {
+        width: 250px;
+    }
+}
+
+
+
+@media screen and (max-width:470px) {
+    .Backpacking .content h1 {
         font-size: 20px;
     }
-    
+
 }
