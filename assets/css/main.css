@@ -48,7 +48,7 @@ body {
     background-color: #ffff;
     width: fit-content;
     border-radius: 20px;
-    margin-top: 170px;
+    bottom: -110px;
     place-self: center;
 
 
@@ -210,18 +210,9 @@ form .trip {
         left: 170px;
     }
 
-    .suggested-places .items {
-        display: block;
-    }
-
-    .suggested-places span {
-        display: none;
-    }
-
-    .sub-hero {
-        margin-top: 120px;
-    }
-
+    
+    
+    
 }
 
 @media screen and (max-width:620px) {
@@ -243,9 +234,7 @@ form .trip {
         display: none;
     }
 
-    .sub-hero {
-        margin-top: 265px;
-    }
+    
 
     .sub-hero .btn-flight .btn-primary {
         justify-items: center;
@@ -276,20 +265,28 @@ form .trip {
     padding: 12px;
 }
 
-.suggested-places .items {
-    display: flex;
-}
+
 
 .right-side .btn-second {
     display: none;
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1200px){
     .suggested-places h5 {
         font-size: 15px;
     }
 
-    .suggested-places a {
+    .suggested-places a,span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .suggested-places h5 {
+        font-size: 13px;
+    }
+
+    .suggested-places a,span {
         font-size: 10px;
     }
 
@@ -304,6 +301,7 @@ form .trip {
 }
 
 
+
 @media screen and (max-width:620px) {
     .right-side .btn-first {
         display: none;
@@ -315,16 +313,12 @@ form .trip {
 
     }
 
-    .suggested-places h5 {
-        font-size: 15px;
-    }
-
-    .suggested-places a {
-        font-size: 10px;
-    }
 
     .suggested-places .col-md-3 img {
         padding: 0;
+    }
+    .suggested-places .card{
+        width:fit-content;
     }
 
 

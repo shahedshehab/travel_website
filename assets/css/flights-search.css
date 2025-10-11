@@ -246,13 +246,39 @@ form .trip {
 
     }
 }
-.choices .card{
+
+.choices .card {
     max-height: 420px;
 }
-.choices img{
+
+.choices img {
     min-height: 420px;
 }
 
-.choices-content .left p{
+.choices-content .left p {
     font-size: 13px;
+}
+
+.Backpacking .content {
+    background-color: var(--primaryColor);
+}
+
+.Backpacking .content .price {
+    height: fit-content;
+}
+
+.Backpacking img {
+    max-width: 300px;
+    height: fit-content;
+}
+.Backpacking .content{
+    width: fit-content;
+}
+
+
+@media screen and (max-width:470px){
+    .Backpacking .content h1{
+        font-size: 20px;
+    }
+    
 }
