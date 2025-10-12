@@ -78,6 +78,9 @@ nav .user {
     .hero-content h1 {
         font-size: 20px;
     }
+    .hero{
+        background-position: center;
+    }
 }
 
 .sub-hero {
@@ -282,11 +285,139 @@ form .trip {
     }
 }
 
+@media screen and (max-width:525px) {
 
+    .Backpacking .up img,
+    .down img {
+        width: 100%;
+    }
 
-@media screen and (max-width:470px) {
     .Backpacking .content h1 {
         font-size: 20px;
     }
+}
 
+.Backpacking{
+    margin-bottom: 250px;
+}
+
+.footer {
+    background-color: var(--primaryColor);
+    padding-top: 200px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.sub-footer {
+
+    background-color: #CDEAE1;
+    border-radius: 20px;
+    width: fit-content;
+    place-self: center;
+    position: absolute;
+    top: -160px;
+}
+
+.sub-footer button {
+    background-color: var(--secondaryColor);
+    font-size: 12px;
+}
+
+.sub-footer p {
+    font-size: 15px;
+}
+
+.sub-footer input {
+    padding: 10px;
+    padding-right: 90px;
+    font-size: 12px;
+}
+
+.sub-footer img {
+    padding-left: 190px;
+}
+
+.footer .footer-item a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer,
+.footer-item h2 {
+    font-size: 14px;
+}
+
+@media screen and (max-width:1400px) {
+
+
+    .footer .left-side {
+        padding: 30px 0;
+    }
+
+    
+}
+
+@media screen and (max-width:1200px) {
+    .sub-footer img {
+        padding-left: 90px;
+        width: 300px;
+        height: 200px;
+
+    }
+
+
+
+    .footer-content {
+        padding: 20px 0;
+
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .sub-footer {
+        position: static;
+        padding-bottom: 20px;
+    }
+
+    .footer-content {
+        padding: 0;
+
+    }
+
+    .Backpacking {
+        margin-bottom: 100px;
+    }
+
+    .footer {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .footer .left-side {
+        padding: 30px 0;
+    }
+
+
+
+}
+
+@media screen and (max-width:770px) {
+    .sub-footer img {
+        display: none;
+    }
+
+    .sub-footer input {
+        padding: 8px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    .footer .right-side {
+        text-align: center;
+    }
 }
