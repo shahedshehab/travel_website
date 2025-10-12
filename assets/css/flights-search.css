@@ -171,15 +171,6 @@ form .trip {
     }
 }
 
-@media screen and (max-width:1100px) {
-    .body_bg {
-        margin: 15px;
-        border-radius: 15px;
-    }
-
-
-
-}
 
 
 @media screen and (max-width:992px) {
@@ -261,6 +252,10 @@ form .trip {
 .choices-content .left p {
     font-size: 13px;
 }
+.Backpacking{
+    margin-bottom: 250px;
+}
+
 
 .Backpacking .content {
     background-color: var(--primaryColor);
@@ -271,8 +266,25 @@ form .trip {
     height: fit-content;
 }
 
+.Backpacking .up,
+.Backpacking .down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  
+}
+
 .Backpacking .img {
     max-width: 300px;
+}
+.Backpacking .col-xl-6.col-md-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -297,9 +309,6 @@ form .trip {
     }
 }
 
-.Backpacking{
-    margin-bottom: 250px;
-}
 
 .footer {
     background-color: var(--primaryColor);
@@ -364,7 +373,11 @@ form .trip {
         padding-left: 90px;
         width: 300px;
         height: 200px;
+        
 
+    }
+    .sub-footer{
+        top: -85px;
     }
 
 
@@ -380,6 +393,7 @@ form .trip {
     .sub-footer {
         position: static;
         padding-bottom: 20px;
+        
     }
 
     .footer-content {
@@ -388,7 +402,7 @@ form .trip {
     }
 
     .Backpacking {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .footer {
