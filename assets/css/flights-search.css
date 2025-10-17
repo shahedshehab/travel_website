@@ -78,8 +78,10 @@ nav .user {
     .hero-content h1 {
         font-size: 20px;
     }
-    .hero{
+
+    .hero {
         background-position: center;
+        height: 400px;
     }
 }
 
@@ -87,8 +89,11 @@ nav .user {
     background-color: #ffff;
     width: fit-content;
     border-radius: 20px;
-    margin-top: -170px;
-    place-self: center;
+
+}
+
+.sub-hero p{
+    font-size: 25px;
 }
 
 .sub-hero a {
@@ -145,6 +150,7 @@ nav .user {
     font-size: 12px;
 
 }
+
 
 .sub-hero .btn-flight .btn-primary {
     margin: 32px 32px 32px 0;
@@ -210,12 +216,35 @@ form .trip {
         display: none;
     }
 
+    .sub-hero {
+        text-align: center;
+    }
+
+    .resarvation {
+        padding: 5px;
+    }
+
+    .sub-hero button .btn {
+        padding: 0;
+    }
+
     .sub-hero .btn-flight .btn-primary {
-        justify-items: center;
-        margin: 0 0 10px 40px;
+        margin: 0;
+    }
+
+    .recording {
+        display: none;
+    }
+
+    .sub-hero p {
+        font-size: 15px;
     }
 
 
+}
+
+.map-places {
+    margin-top: 150px;
 }
 
 .right-side .btn {
@@ -252,7 +281,8 @@ form .trip {
 .choices-content .left p {
     font-size: 13px;
 }
-.Backpacking{
+
+.Backpacking {
     margin-bottom: 250px;
 }
 
@@ -268,23 +298,24 @@ form .trip {
 
 .Backpacking .up,
 .Backpacking .down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  width: 100%;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+
 }
 
 .Backpacking .img {
     max-width: 300px;
 }
+
 .Backpacking .col-xl-6.col-md-12 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -322,9 +353,8 @@ form .trip {
     background-color: #CDEAE1;
     border-radius: 20px;
     width: fit-content;
-    place-self: center;
     position: absolute;
-    top: -160px;
+
 }
 
 .sub-footer button {
@@ -365,7 +395,7 @@ form .trip {
         padding: 30px 0;
     }
 
-    
+
 }
 
 @media screen and (max-width:1200px) {
@@ -373,14 +403,9 @@ form .trip {
         padding-left: 90px;
         width: 300px;
         height: 200px;
-        
+
 
     }
-    .sub-footer{
-        top: -85px;
-    }
-
-
 
     .footer-content {
         padding: 20px 0;
@@ -390,27 +415,12 @@ form .trip {
 
 @media screen and (max-width:992px) {
 
-    .sub-footer {
-        position: static;
-        padding-bottom: 20px;
-        
-    }
 
-    .footer-content {
-        padding: 0;
-
-    }
 
     .Backpacking {
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
-    .footer {
-
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-    }
 
     .footer .left-side {
         padding: 30px 0;

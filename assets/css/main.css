@@ -50,6 +50,8 @@ body {
     border-radius: 20px;
     bottom: -110px;
     place-self: center;
+
+
 }
 
 .sub-hero a {
@@ -366,10 +368,8 @@ form .trip {
 
     background-color: #CDEAE1;
     border-radius: 20px;
-    width: fit-content;
-    place-self: center;
+    width: fit-content;  
     position: absolute;
-    
 }
 
 .sub-footer button {
@@ -424,41 +424,30 @@ form .trip {
     }
 
    
-
     .footer-content {
         padding: 20px 0;
 
+    }
+    .footer .left-side{
+        text-align: center;
     }
 }
 
 @media screen and (max-width:992px) {
 
-    .sub-footer {
-        position: static;
-        padding-bottom: 20px;
-    }
-
-    .footer-content {
-        padding: 0;
-
-    }
-
-    .reviews {
-        padding-bottom: 100px;
-    }
-
     .footer {
 
-        padding-top: 10px;
+        padding-top: 150px;
         padding-bottom: 10px;
 
     }
 
     .footer .left-side {
         padding: 30px 0;
+        
     }
 
-
+   
 
 }
 
