@@ -1,0 +1,13 @@
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --primaryColor: #8DD3BB;
+    --secondaryColor: #112211;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.second-color {
+    color: var(--secondaryColor);
+}

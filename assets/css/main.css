@@ -1,12 +1,4 @@
-:root {
-    --primary-font: "Montserrat", sans-serif;
-    --primaryColor: #8DD3BB;
-    --secondaryColor: #112211;
-}
 
-body {
-    font-family: "Montserrat", sans-serif;
-}
 
 .body_bg {
     background-image: url("../img/Home-page/nav-hero/home-img.webp");

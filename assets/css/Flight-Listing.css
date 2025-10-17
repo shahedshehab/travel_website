@@ -1,0 +1,70 @@
+body{
+    background-color: #FAFBFC;
+}
+.about .line{
+width: 2px;
+height: 15px;
+background-color:var(--secondaryColor);
+}
+.profile img{
+    width: 45px;
+    height: 45px;
+   object-fit: cover;
+   object-position: 20%;
+}
+.profile svg{
+    background-color: #FF8682;
+    right: 50px;
+}
+.about .profile span{
+    font-size: 12px;
+}
+
+
+/*sub hero*/
+.sub-hero {
+    width: fit-content;
+    border-radius: 20px;
+    top: 170px;
+    padding: 0 30px 20px 20px;
+}
+.subhero-form,
+.left-form,
+.right-form {
+    display: flex;
+}
+
+.recording input {
+    padding: 10px 150px 10px 5px;
+    font-size: 12px;
+    border: 1px solid #79747E;
+    border-radius: 5px;
+
+}
+
+.recording label {
+    position: relative;
+    padding: 0 2px;
+    background-color: #ffff;
+    left: 15px;
+    top: 9px;
+    width: fit-content;
+    font-size: 13px;
+    color: #79747E;
+}
+
+.recording .arrow {
+    left: 260px;
+    bottom: 30px;
+}
+
+.recording .arrow-drop {
+    left: 250px;
+    bottom: 30px;
+}
+.recording .search{
+    background-color: var(--primaryColor);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
