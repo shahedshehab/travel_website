@@ -78,24 +78,23 @@ body {
 }
 
 .recording label {
-    position: relative;
     padding: 0 2px;
     background-color: #ffff;
     left: 15px;
-    top: 9px;
+    top: -12px;
     width: fit-content;
     font-size: 13px;
     color: #79747E;
 }
 
 .recording .arrow {
-    left: 260px;
-    bottom: 30px;
+    left: 270px;
+    bottom: 10px;
 }
 
 .recording .arrow-drop {
     left: 120px;
-    bottom: 30px;
+    bottom: 10px;
 }
 
 form .trip {
@@ -108,6 +107,7 @@ form .trip {
     padding: 8px;
     border-radius: 5px;
 }
+
 .btn-flight .btn {
     color: var(--secondaryColor);
     font-size: 14px;
@@ -122,6 +122,10 @@ form .trip {
     font-family: var(--primary-font);
     font-size: 12px;
 
+}
+
+.search .btn-flight {
+    display: none;
 }
 
 
@@ -145,6 +149,9 @@ form .trip {
 
 
 @media screen and (max-width:992px) {
+    .sub-hero {
+        top: 220px;
+    }
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -153,15 +160,36 @@ form .trip {
     .recording .arrow {
         left: 170px;
     }
+.search .btn{
+        padding: 0 8px;
+    }
 
     .subhero-form {
         display: block;
     }
 
     .recording .arrow-drop {
-        left: 170px;
+        left: 175px;
     }
 
+    .left-form {
+        padding-bottom: 20px;
+    }
+
+    .sub-hero .content {
+        display: block;
+    }
+
+    .search .btn-flight {
+        display: block;
+
+    }
+
+    .search {
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+    }
 
 
 
@@ -185,12 +213,11 @@ form .trip {
         align-items: center;
         gap: 10px;
     }
-    .sub-hero .content{
+
+    .sub-hero .content {
         display: block;
     }
-    .sub-hero .search .search-icon{
-        display: none;
-    }
+
 
 
 }
