@@ -299,3 +299,42 @@ input[type='range']::-webkit-slider-thumb {
     --bs-btn-disabled-border-color: #8DD3BB;
     --bs-gradient: none;
 }
+.right-filter{
+    width:100%;
+    background-color: #ffff;
+    padding: 20px;
+    height: fit-content;
+    
+}
+.vertical-line{
+    height: 48px;
+    width: 0.5px;
+    background-color: rgb(206, 200, 200);
+}
+.card img{
+    width: 160px;
+    height: 110px;
+}
+
+.right .card{
+    outline: none;
+    border: none;
+}
+.header-right p{
+    top: 12px;
+    right: 50px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.line-hor{
+    background-color: rgb(206, 200, 200) ;
+    width: 100%;
+    height: 1px;
+}
+.buttom-card .btn{
+    --bs-btn-padding-x:16px;
+    --bs-btn-padding-y:16px;
+}

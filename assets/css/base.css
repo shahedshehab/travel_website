@@ -15,3 +15,23 @@ body {
 .fs-12{
 font-size: 12px;
 }
+.salmon-color{
+    color: #FF8682;
+}
+.light-secondary-color{
+    color: #1122114b;
+}
+.btn-primary {
+    --bs-btn-color: var(--secondaryColor);
+    --bs-btn-bg: var(--primaryColor);
+    --bs-btn-border-color: var(--primaryColor);
+    --bs-btn-hover-color: var(--secondaryColor);
+    --bs-btn-hover-bg: var(--primaryColor);
+    --bs-btn-hover-border-color: var(--primaryColor);
+    --bs-btn-active-color: var(--secondaryColor);
+    --bs-btn-active-bg: var(--primaryColor);
+    --bs-btn-active-border-color:var(--primaryColor);
+    --bs-btn-disabled-color: var(--secondaryColor);
+    --bs-btn-disabled-bg: var(--primaryColor);
+    --bs-btn-disabled-border-color: var(--primaryColor);
+}
