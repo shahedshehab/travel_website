@@ -29,7 +29,7 @@ body {
     .flight .find-flight,
     .stays .find-stay,
     .love .fav,
-    .line,
+    .nav-line,
     .profile span {
         display: none;
     }
@@ -54,7 +54,6 @@ body {
 .sub-hero {
     width: fit-content;
     border-radius: 20px;
-    top: 170px;
     padding: 20px;
 }
 
@@ -149,9 +148,6 @@ form .trip {
 
 
 @media screen and (max-width:992px) {
-    .sub-hero {
-        top: 220px;
-    }
 
     .recording input {
         padding: 10px 60px 10px 5px;
@@ -197,10 +193,6 @@ form .trip {
 }
 
 @media screen and (max-width:620px) {
-    .sub-hero {
-        top: 270px;
-    }
-
     .recording,
     .left-form,
     .right-form {
@@ -221,13 +213,13 @@ form .trip {
 }
 
 /*Book-flight*/
-.Book-flight {
-    margin-top: 170px;
+.Book-flight{
+    padding-bottom: 250px;
 }
 
 .long-line {
     background-color:rgb(206, 200, 200);
-    height: 1360px;
+    height: 1415px;
     width: 0.5px;
     border-radius: 5px;
 }
@@ -335,6 +327,20 @@ p {
     height: 1px;
 }
 .buttom-card .btn{
-    --bs-btn-padding-x:16px;
-    --bs-btn-padding-y:16px;
+    --bs-btn-padding-x:1rem;
+    --bs-btn-padding-y:1rem;
+}
+@media screen and (max-width:992px) {
+.long-line{
+        display: none;
+    }
+}
+@media screen and (max-width:620px) {
+    
+    body{
+        font-size: 12px;
+    }
+    .other-sort{
+        display: none;
+    }
 }
