@@ -49,3 +49,30 @@ body {
 
 }
 
+.trip-overview .head{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.trip-overview .card{
+    height: 400px;
+    background-image: url('../img/flight-detail/airplain.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:770px) {
+    .trip-overview .head{
+    display: block;
+    align-items: center;
+    
+}
+
+.trip-overview .card{
+    height:250px;
+    background-position:50%;
+}
+  
+}
