@@ -108,6 +108,9 @@ input[type="checkbox"]:checked::after {
 .policies-content {
     background-color: #8dd3ba7e;
 }
+.return-ticket{
+    margin-bottom: 150px;
+}
 
 .return-ticket .sub-card img {
     width: 65px;
