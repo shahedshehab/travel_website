@@ -55,6 +55,14 @@ body {
 
 }
 
+.trip-overview .arrow-links a {
+    transition: all .5s;
+}
+
+.trip-overview .arrow-links a:hover {
+    color: #FF8682;
+}
+
 
 .trip-overview .card {
     height: 400px;
@@ -74,6 +82,10 @@ body {
     .trip-overview .card {
         height: 250px;
         background-position: 50%;
+    }
+
+    .trip-overview .arrow-links a {
+        font-size: 14px;
     }
 
 }
@@ -105,10 +117,28 @@ input[type="checkbox"]:checked::after {
     left: 2px;
 }
 
+.gallery img {
+    height: 120px;
+    width: 120px;
+    border-radius: 12px;
+}
+
+.gallery {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
 .policies-content {
     background-color: #8dd3ba7e;
 }
-.return-ticket{
+
+@media screen and (max-width:620px) {
+    .policies-content p {
+        font-size: 12px;
+    }
+}
+
+.return-ticket {
     margin-bottom: 150px;
 }
 
@@ -149,5 +179,17 @@ input[type="checkbox"]:checked::after {
     .return-ticket .card-content .right {
         align-items: center;
         justify-content: center;
+    }
+
+    .return-ticket .middle svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .return-ticket .dot-line .hor-line {
+        width: 15px;
+    }
+    .return-ticket .left span{
+        font-size: 14px;
     }
 }
