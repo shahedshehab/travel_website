@@ -8,7 +8,7 @@ body {
     font-family: var(--primary-font);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -16,21 +16,30 @@ a{
     color: var(--secondaryColor);
 }
 
-.fs-12{
-font-size: 0.75rem;
+.fs-12 {
+    font-size: 0.75rem;
 }
-.fs-14{
-font-size: 0.875rem;
+
+.fs-14 {
+    font-size: 0.875rem;
 }
-.salmon-color{
+
+.salmon-color {
     color: #FF8682;
 }
-.light-secondary-color{
+
+.light-secondary-color {
     color: #1122114b;
 }
-.bg-secondary-color{
-background-color: var(--secondaryColor);
+
+.bg-primary-color {
+    background-color: var(--primaryColor);
 }
+
+.bg-secondary-color {
+    background-color: var(--secondaryColor);
+}
+
 .btn-primary {
     --bs-btn-color: var(--secondaryColor);
     --bs-btn-bg: var(--primaryColor);
@@ -40,11 +49,12 @@ background-color: var(--secondaryColor);
     --bs-btn-hover-border-color: var(--primaryColor);
     --bs-btn-active-color: var(--secondaryColor);
     --bs-btn-active-bg: var(--primaryColor);
-    --bs-btn-active-border-color:var(--primaryColor);
+    --bs-btn-active-border-color: var(--primaryColor);
     --bs-btn-disabled-color: var(--secondaryColor);
     --bs-btn-disabled-bg: var(--primaryColor);
     --bs-btn-disabled-border-color: var(--primaryColor);
 }
+
 .btn-outline-primary {
     --bs-btn-color: #112211;
     --bs-btn-border-color: #8DD3BB;
@@ -75,7 +85,7 @@ background-color: var(--secondaryColor);
 
     background-color: #CDEAE1;
     border-radius: 20px;
-    width: fit-content;  
+    width: fit-content;
     position: absolute;
 }
 
@@ -111,7 +121,7 @@ background-color: var(--secondaryColor);
 }
 
 @media screen and (max-width:1400px) {
-    
+
 
     .footer .left-side {
         padding: 30px 0;
@@ -130,12 +140,13 @@ background-color: var(--secondaryColor);
 
     }
 
-   
+
     .footer-content {
         padding: 20px 0;
 
     }
-    .footer .left-side{
+
+    .footer .left-side {
         text-align: center;
     }
 }
@@ -151,10 +162,10 @@ background-color: var(--secondaryColor);
 
     .footer .left-side {
         padding: 30px 0;
-        
+
     }
 
-   
+
 
 }
 
