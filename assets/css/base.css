@@ -32,6 +32,10 @@ a {
     color: #1122114b;
 }
 
+.bg-light {
+    background-color: #1122114b;
+}
+
 .bg-primary-color {
     background-color: var(--primaryColor);
 }
