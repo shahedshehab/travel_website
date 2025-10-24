@@ -1,0 +1,137 @@
+body {
+    background-color: #FAFBFC;
+}
+
+.about .line {
+    width: 2px;
+    height: 15px;
+    background-color: var(--secondaryColor);
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: 20%;
+}
+
+.profile svg {
+    background-color: #FF8682;
+    right: 50px;
+}
+
+.about .profile span {
+    font-size: 12px;
+}
+
+@media screen and (max-width:760px) {
+
+    .flight .find-flight,
+    .stays .find-stay,
+    .love .fav,
+    .nav-line,
+    .profile span {
+        display: none;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .profile svg {
+        right: 0;
+    }
+
+}
+
+.trip-overview .head {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.trip-overview .arrow-links a {
+    transition: all .5s;
+}
+
+.trip-overview .arrow-links a:hover {
+    color: #FF8682;
+}
+
+.return-ticket .sub-card img {
+    width: 65px;
+    height: 45px;
+}
+
+.return-ticket .sub-card {
+    border: 1px solid var(--primaryColor);
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.vertical-line {
+    height: 20px;
+    width: 1px;
+    background-color: #11221150;
+}
+
+.dot {
+    background-color: var(--secondaryColor);
+    width: 4px;
+    height: 4px;
+}
+
+.hor-line {
+    background-color: var(--secondaryColor);
+    width: 30px;
+    height: 1.5px;
+}
+
+@media screen and (max-width:768px) {
+
+    .return-ticket .header-card .left,
+    .return-ticket .header-card .right,
+    .return-ticket .card-content .left,
+    .return-ticket .card-content .right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .return-ticket .middle svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .return-ticket .dot-line .hor-line {
+        width: 15px;
+    }
+    .return-ticket .left span{
+        font-size: 14px;
+    }
+}
+
+input[type="radio"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  accent-color: #ffff;
+}
+input{
+    accent-color:#ffff;
+    background-color: var(--primaryColor);
+}
+
+

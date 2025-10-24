@@ -1,5 +1,3 @@
-
-
 nav .user {
     display: none;
 }
@@ -80,8 +78,9 @@ nav .user {
 
 }
 
-.sub-hero p{
+.sub-hero p {
     font-size: 25px;
+    padding: 16px;
 }
 
 .sub-hero a {
@@ -197,7 +196,7 @@ form .trip {
 
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:770px) {
 
     .left-form,
     .right-form {
@@ -217,7 +216,7 @@ form .trip {
     }
 
     .sub-hero .btn-flight .btn-primary {
-        margin: 0;
+        margin: 0 0 16px 0;
     }
 
     .recording {
@@ -226,13 +225,27 @@ form .trip {
 
     .sub-hero p {
         font-size: 15px;
+        padding: 16px;
+        margin: 0;
     }
 
+}
 
+@media screen and (max-width:400px) {
+    .btn.promo-code {
+        display: none;
+    }
+    
 }
 
 .map-places {
     margin-top: 150px;
+}
+
+@media screen and (max-width:770px){
+    .map-places {
+    margin-top: 100px;
+}
 }
 
 .right-side .btn {
@@ -256,6 +269,7 @@ form .trip {
         padding: 10px 5px;
 
     }
+    
 }
 
 .choices .card {
@@ -327,5 +341,3 @@ form .trip {
         font-size: 20px;
     }
 }
-
-

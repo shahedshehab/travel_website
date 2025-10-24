@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking detail</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--my css file-->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/Booking-detail.css">
+</head>
+
+<body>
+
+    <!-- start nabvar section -->
+    <nav class="navbar position-relative bg-white position-relative">
+        <div class="container justify-content-between">
+            <div class="reservation d-flex gap-3 ">
+                <div class="flight">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                        </svg>
+                    </a>
+                    <a class="find-flight text-decoration-none second-color fw-semibold" href="#">Find Flight</a>
+                </div>
+                <div class="stays">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
+                        </svg>
+                    </a>
+                    <a class="find-stay text-decoration-none second-color fw-semibold" href="#">Find Stays</a>
+                </div>
+            </div>
+            <a class="navbar-brand " href="#">
+                <img src="./assets/img/flights_search-page/navbar/Logo.png" alt="Logo" width="130" height="40"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <div class="about d-flex gap-3 align-items-center position-relative">
+                <div class="love">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#0b160b"
+                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                    </svg>
+                    <a href="#" class="fav fw-semibold second-color text-decoration-none">Favourites</a>
+                </div>
+                <div class="nav-line"></div>
+                <div class="ps-2 profile">
+                    <img src="./assets/img/listing/profile-pic.webp" alt="profile picture" class="rounded-circle">
+                    <a href=""><svg class="rounded-circle position-absolute bottom-0" xmlns="http://www.w3.org/2000/svg"
+                            height="12" width="12"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#112211"
+                                d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
+                        </svg></a>
+                    <span class="fw-semibold ">John D.</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar section -->
+    <main>
+        <div class="trip-overview">
+            <div class="container">
+                <div class="arrow-links d-flex gap-3 py-5 align-items-center">
+                    <a class="second-color fs-14" href="">Turkey</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#0b160b"
+                            d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
+                    </svg>
+                    <a class="second-color fs-14" href="">Istanbul</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#0b160b"
+                            d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
+                    </svg>
+                    <a class="second-color fs-14" href="">CVK Park Bosphorus Hotel Istanbul</a>
+                </div>
+            </div>
+        </div>
+        <section class="booking">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="left d-flex flex-column gap-3">
+                            <div class="return-ticket">
+                                <div class="card p-3  border-0 mb-4 shadow">
+                                    <div class="header-card">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <div class="left d-flex flex-column gap-2">
+                                                    <h1 class="fs-4">Emirates A380 Airbus</h1>
+                                                    <p>Return Wed, Dec 8</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="right d-flex flex-column gap-2 align-items-md-end justify-content-md-end">
+                                                    <span class="fs-4 salmon-color fw-bold">$240</span>
+                                                    <p>2h 28m</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="row g-4">
+                                            <div class="col-md-6">
+                                                <div class="left d-flex">
+                                                    <div class="sub-card d-flex gap-3 p-2">
+                                                        <div class="img">
+                                                            <img src="./assets/img/flight-detail/emirates.webp"
+                                                                alt="emirates Logo">
+                                                        </div>
+                                                        <div class="subcard-content d-flex flex-column">
+                                                            <span class="fw-semibold fs-6">Emirates</span>
+                                                            <span class="fs-12 ">Airbus A320</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="right d-flex flex-column align-items-md-end">
+                                                    <div class="link-logo d-flex gap-3">
+                                                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20"
+                                                                width="20"
+                                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                                <path fill="#0b160b"
+                                                                    d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                                                            </svg></a>
+                                                        <div class="vertical-line"></div>
+                                                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20"
+                                                                width="20"
+                                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                                <path fill="#0b160b"
+                                                                    d="M320 160C229.1 160 146.8 196 86.3 254.6C73.6 266.9 53.3 266.6 41.1 253.9C28.9 241.2 29.1 220.9 41.8 208.7C113.7 138.9 211.9 96 320 96C428.1 96 526.3 138.9 598.3 208.7C611 221 611.3 241.3 599 253.9C586.7 266.5 566.4 266.9 553.8 254.6C493.2 196 410.9 160 320 160zM272 496C272 469.5 293.5 448 320 448C346.5 448 368 469.5 368 496C368 522.5 346.5 544 320 544C293.5 544 272 522.5 272 496zM200 390.2C188.3 403.5 168.1 404.7 154.8 393C141.5 381.3 140.3 361.1 152 347.8C193 301.4 253.1 272 320 272C386.9 272 447 301.4 488 347.8C499.7 361.1 498.4 381.3 485.2 393C472 404.7 451.7 403.4 440 390.2C410.6 356.9 367.8 336 320 336C272.2 336 229.4 356.9 200 390.2z" />
+                                                            </svg></a>
+                                                        <div class="vertical-line"></div>
+                                                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20"
+                                                                width="20"
+                                                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                                <path fill="#0b160b"
+                                                                    d="M264.5 64C251.2 64 240.5 74.7 240.5 88C240.5 101.3 251.2 112 264.5 112L296.5 112L296.5 137.3C188.5 149.2 104.5 240.8 104.5 352C104.5 471.3 201.2 568 320.5 568C439.8 568 536.5 471.3 536.5 352C536.5 312.2 525.7 274.9 506.9 242.8L535.1 214.6C547.6 202.1 547.6 181.8 535.1 169.3C522.6 156.8 502.3 156.8 489.8 169.3L466.4 192.7C433.5 162.5 391.2 142.4 344.4 137.2L344.4 111.9L376.4 111.9C389.7 111.9 400.4 101.2 400.4 87.9C400.4 74.6 389.7 63.9 376.4 63.9L264.4 63.9zM344.5 248L344.5 352C344.5 365.3 333.8 376 320.5 376C307.2 376 296.5 365.3 296.5 352L296.5 248C296.5 234.7 307.2 224 320.5 224C333.8 224 344.5 234.7 344.5 248z" />
+                                                            </svg></a>
+                                                        <div class="vertical-line"></div>
+                                                        <a href=""><img width="20" height="20"
+                                                                src="./assets/img/flight-detail/food_icon.png"
+                                                                alt=""></a>
+                                                        <div class="vertical-line"></div>
+                                                        <a href=""><img width="20" height="20"
+                                                                src="./assets/img/flight-detail/person-seat.png"
+                                                                alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="end-card pt-4">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div
+                                                    class="left d-flex gap-2 align-items-center justify-content-center">
+                                                    <span class="fw-bold">12:00 pm</span>
+                                                    <span class="fs-12 light-secondary-color">Newark(EWR)</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div
+                                                    class="middle d-flex align-items-center justify-content-center gap-3">
+                                                    <div class="dot-line d-flex align-items-center">
+                                                        <div class="dot rounded-circle"></div>
+                                                        <div class="hor-line"></div>
+                                                    </div>
+                                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="40"
+                                                            width="40"
+                                                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                                            <path fill="#0b160b"
+                                                                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                                                        </svg></a>
+                                                    <div class="dot-line d-flex align-items-center">
+                                                        <div class="hor-line"></div>
+                                                        <div class="dot rounded-circle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div
+                                                    class="right d-flex gap-2 align-items-center justify-content-center">
+                                                    <span class="fw-bold">12:00 pm</span>
+                                                    <span class="fs-12 light-secondary-color">Newark(EWR)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay">
+                                <div class="card shadow p-3">
+                                    <form>
+                                        <div class="pay-full d-flex justify-content-between">
+                                            <label for="full" class="d-flex flex-column gap-1">
+                                                <div class="inside-label d-flex flex-column gap-2">
+                                                    <h1 class="fs-5">Pay in full</h1>
+                                                    <p>Pay the total and you are all set</p>
+                                                </div>
+                                            </label>
+                                            <input type="radio" name="pay" value="full" id="full">
+                                        </div>
+                                        <div class="pay-part d-flex justify-content-between">
+                                            <label for="part" class="d-flex flex-column gap-1">
+                                                <div class="inside-label d-flex flex-column gap-2">
+                                                    <h1 class="fs-5">Pay part now, part later</h1>
+                                                    <p class="fs-14">Pay $207.43 now, and the rest ($207.43) will be
+                                                        automatically charged
+                                                        to
+                                                        the same payment method on Nov 14, 2022. No extra fees.
+                                                    </p>
+                                                    <a class="second-color text-decoration-underline fs-12"
+                                                        href="#">More info</a>
+                                                </div>
+                                            </label>
+                                            <input type="radio" name="pay" value="part" id="part">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="login"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--bootstrap 5.3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
