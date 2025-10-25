@@ -248,3 +248,6 @@ input[type="checkbox"]:checked::after {
     }
 
 }
+.Terms-and-Conditions{
+    margin-bottom: 150px;
+}
