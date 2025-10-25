@@ -138,25 +138,30 @@ input[type="radio"]::before {
     height: 1px;
     background-color: var(--secondaryColor);
 }
-.right-line{
+
+.right-line {
     width: 100%;
     height: 1px;
     background-color: var(--secondaryColor);
 }
-@media screen and (max-width:1200px){
-    .smallcard .body{
+
+@media screen and (max-width:1200px) {
+    .smallcard .body {
         width: 100%;
         margin: 0;
     }
-    .smallcard img{
+
+    .smallcard img {
         margin: auto;
         object-fit: fill;
     }
 }
-.booking{
+
+.booking {
     margin-bottom: 200px;
 }
-.box{
+
+.box {
     border: 2px dashed var(--primaryColor);
     width: 100%;
     padding: 20px;
@@ -164,40 +169,82 @@ input[type="radio"]::before {
     height: 180px;
     text-align: center;
 }
-.circle{
+
+.circle {
     width: 50px;
     height: 50px;
     border: 3px solid var(--primaryColor);
     border-radius: 50%;
 }
 
-.line-w{
+.line-w {
     width: 15px;
     height: 2px;
     background-color: var(--primaryColor);
 }
-.line-h{
+
+.line-h {
     width: 2px;
     height: 15px;
     background-color: var(--primaryColor);
 }
-.box a{
+
+.box a {
     bottom: 20px;
     color: #112211a1;
 }
-.modal-body .visa{
+
+.modal-body .visa {
     right: 1rem;
     top: 1rem;
 }
-.modal-body label{
+
+.modal-body label {
     left: 10px;
     top: -12px;
     padding: 5px;
 }
-.modal-body .arrow-down{
+
+.modal-body .arrow-down {
     right: 1rem;
 }
-.modal-body .label-half-width{
+
+.modal-body .label-half-width {
     left: 245px;
     width: fit-content;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1.5px solid currentColor;
+    border-radius: 0.15em;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--secondaryColor);
+    border: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}
+
+@media screen and (max-width:768px) {
+    .modal-body .label-half-width {
+        left: 10px;
+        top: 70px;
+    }
+
 }
