@@ -185,3 +185,19 @@ input[type="radio"]::before {
     bottom: 20px;
     color: #112211a1;
 }
+.modal-body .visa{
+    right: 1rem;
+    top: 1rem;
+}
+.modal-body label{
+    left: 10px;
+    top: -12px;
+    padding: 5px;
+}
+.modal-body .arrow-down{
+    right: 1rem;
+}
+.modal-body .label-half-width{
+    left: 245px;
+    width: fit-content;
+}
