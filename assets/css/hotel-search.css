@@ -1,0 +1,56 @@
+.about .line {
+    width: 2px;
+    height: 15px;
+    background-color: var(--secondaryColor);
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: 20%;
+}
+
+.profile svg {
+    background-color: #FF8682;
+    right: 50px;
+}
+
+.about .profile span {
+    font-size: 12px;
+}
+
+@media screen and (max-width:760px) {
+
+    .flight .find-flight,
+    .stays .find-stay,
+    .love .fav,
+    .nav-line,
+    .profile span {
+        display: none;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .profile svg {
+        right: 0;
+    }
+}
+
+.hero .card {
+  background:
+    linear-gradient(to left, #00234d00, #00234dac),
+    url("../img/hotel-search/resort.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 530px;
+}
+

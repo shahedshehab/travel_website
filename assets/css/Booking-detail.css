@@ -129,9 +129,7 @@ input[type="radio"]::before {
     border-radius: 50%;
 }
 
-/* input{
-    accent-color:var(--primaryColor);
-} */
+
 
 .middle-line {
     width: 380px;
@@ -155,6 +153,17 @@ input[type="radio"]::before {
         margin: auto;
         object-fit: fill;
     }
+}
+
+.pay-full,.pay-part,.visa-card{
+    transition: all 0.8s;
+}
+
+.pay-full:hover,
+.pay-part:hover,
+.visa-card:hover {
+  background-color: var(--primaryColor);
+  border-radius: 8px;
 }
 
 .booking {
@@ -248,6 +257,7 @@ input[type="checkbox"]:checked::after {
     }
 
 }
-.Terms-and-Conditions{
+
+.Terms-and-Conditions {
     margin-bottom: 150px;
 }
