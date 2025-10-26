@@ -1,0 +1,139 @@
+.sub-hero {
+    width: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sub-hero .content {
+    display: flex;
+}
+
+.subhero-form,
+.left-form,
+.right-form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.recording input {
+    padding: 10px 150px 10px 5px;
+    font-size: 12px;
+    border: 1px solid #79747E;
+    border-radius: 5px;
+
+}
+
+.recording label {
+    padding: 0 2px;
+    background-color: #ffff;
+    left: 15px;
+    top: -12px;
+    width: fit-content;
+    font-size: 13px;
+    color: #79747E;
+}
+
+
+form .small-form {
+    padding: 10px 1px 10px 5px;
+}
+
+.recording .search {
+    background-color: var(--primaryColor);
+    height: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sub-hero.search{
+    width: fit-content;
+}
+.search a .search-text {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1300px) {
+
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    form .trip {
+        padding: 10px 1px 10px 5px;
+    }
+
+    .recording .arrow {
+        left: 190px;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    .recording .arrow {
+        left: 170px;
+    }
+
+    .search .btn {
+        padding: 0 8px;
+    }
+
+    .subhero-form {
+        display: block;
+    }
+
+    .recording .arrow-drop {
+        left: 175px;
+    }
+
+    .left-form {
+        padding-bottom: 20px;
+    }
+
+    .sub-hero .content {
+        display: block;
+    }
+
+    .search .btn-flight {
+        display: block;
+
+    }
+
+    .search {
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+}
+
+@media screen and (max-width:620px) {
+
+    .recording,
+    .left-form,
+    .right-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recording .search {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sub-hero .content {
+        display: block;
+    }
+}
