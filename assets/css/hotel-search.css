@@ -45,12 +45,148 @@
 }
 
 .hero .card {
-  background:
-    linear-gradient(to left, #00234d00, #00234dac),
-    url("../img/hotel-search/resort.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 530px;
+    background:
+        linear-gradient(to left, #00234d00, #00234dac),
+        url("../img/hotel-search/resort.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 530px;
 }
 
+.hero .card-title {
+    width: 30%;
+}
+
+@media screen and (max-width:870px) {
+    .hero .card-title {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .hero .card {
+        height: 400px;
+    }
+
+    .hero .card-title {
+        width: 80%;
+    }
+}
+
+.sub-hero {
+    background-color: #ffff;
+    width: fit-content;
+    border-radius: 20px;
+
+}
+
+.sub-hero p {
+    font-size: 25px;
+    padding: 16px;
+}
+
+.sub-hero a {
+    color: var(--secondaryColor);
+}
+
+.subhero-form,
+.left-form,
+.right-form {
+    display: flex;
+}
+
+.recording input {
+    padding: 10px 150px 10px 5px;
+    font-size: 12px;
+    border: 1px solid #79747E;
+    border-radius: 5px;
+
+}
+
+.recording label {
+    position: relative;
+    padding: 0 2px;
+    background-color: #ffff;
+    left: 15px;
+    top: 9px;
+    width: fit-content;
+    font-size: 13px;
+    color: #79747E;
+}
+
+.sub-hero .btn-places {
+    width: fit-content;
+}
+
+
+form .small-form {
+    padding: 10px 20px 10px 5px;
+}
+
+@media screen and (max-width:1300px) {
+
+
+    .recording input {
+        padding: 10px 60px 10px 5px;
+    }
+
+    form .small-form {
+        padding: 10px 1px 10px 5px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:992px) {
+
+
+    .recording input {
+        padding: 10px 60px 10px 24px;
+    }
+
+    .subhero-form {
+        display: block;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .left-form,
+    .right-form {
+        display: none;
+    }
+
+    .sub-hero {
+        text-align: center;
+    }
+
+    .resarvation {
+        padding: 5px;
+    }
+
+    .recording {
+        display: none;
+    }
+
+    .sub-hero p {
+        font-size: 15px;
+        padding: 16px;
+        margin: 0;
+    }
+    .sub-hero .btn-places {
+        margin: 0 0 20px 20px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .btn.promo-code {
+        display: none;
+    }
+
+    
+}
