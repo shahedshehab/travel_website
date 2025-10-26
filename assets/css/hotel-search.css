@@ -26,7 +26,7 @@
     .stays .find-stay,
     .love .fav,
     .nav-line,
-    .profile span {
+    nav .profile span {
         display: none;
     }
 
@@ -163,10 +163,6 @@ form .small-form {
         text-align: center;
     }
 
-    .resarvation {
-        padding: 5px;
-    }
-
     .recording {
         display: none;
     }
@@ -177,7 +173,7 @@ form .small-form {
         margin: 0;
     }
     .sub-hero .btn-places {
-        margin: 0 0 20px 20px;
+        margin: 0 0 20px 16px;
     }
 
 
@@ -189,4 +185,120 @@ form .small-form {
     }
 
     
+}
+
+.recent-searches{
+    margin-top: 100px;
+}
+
+.choices .card {
+    max-height: 420px;
+}
+
+.choices img {
+    min-height: 420px;
+}
+
+.choices-content .left p {
+    font-size: 13px;
+}
+
+
+.right-side .btn {
+    background-color: #ffff;
+    border-color: var(--primaryColor);
+    padding: 12px 16px;
+    color: var(--secondaryColor);
+}
+
+.right-side .btn-second {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .right-side .btn-first {
+        display: none;
+    }
+
+    .right-side .btn-second {
+        display: block;
+        padding: 10px 5px;
+
+    }
+    
+}
+.Backpacking {
+    margin-bottom: 250px;
+}
+
+
+.Backpacking .content {
+    background-color: var(--primaryColor);
+
+}
+
+.Backpacking .content .price {
+    height: fit-content;
+}
+
+.Backpacking .up,
+.Backpacking .down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+
+}
+
+.Backpacking .img {
+    max-width: 300px;
+}
+
+.Backpacking .col-xl-6.col-md-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:1400px) {
+
+    .Backpacking .up img,
+    .down img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:525px) {
+
+    .Backpacking .up img,
+    .down img {
+        width: 100%;
+    }
+
+    .Backpacking .content h1 {
+        font-size: 20px;
+    }
+}
+.modal-dialog{
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px){
+    .modal-dialog{
+    right: 125px;
+    top: 40px;
+}
+}
+@media screen and (max-width:560px){
+    .modal-dialog{
+    right: -8px;
+    top: 52px;
+}
 }

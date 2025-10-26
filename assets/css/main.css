@@ -314,9 +314,6 @@ form .trip {
         
        width:fit-content;
     }
-    
-
-
 }
 
 .travel-services .card {
@@ -327,7 +324,6 @@ form .trip {
     width: 100%;
     min-height: 450px;
     object-fit: cover;
-
 }
 
 .reviews {
