@@ -270,6 +270,26 @@ p {
     --bs-btn-padding-y: 1rem;
 }
 
+.heart-after{
+    display: none;
+}
+
+/* .heart svg{
+transition: all 0.9s;
+} */
+
+.heart:hover .heart-befor {
+  display: none;  
+}
+
+.heart:hover .heart-after {
+  display: inline;
+}
+
+.btn .btn-primary{
+    transition: all 0.9s;
+}
+
 @media screen and (max-width:992px) {
     .long-line {
         display: none;
@@ -281,5 +301,26 @@ p {
     body {
         font-size: 12px;
     }
+    .card-title h5{
+        font-size: 15px;
+    }
 
+}
+.modal-dialog{
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px){
+    .modal-dialog{
+    right: 125px;
+    top: 40px;
+}
+}
+@media screen and (max-width:560px){
+    .modal-dialog{
+    right: -8px;
+    top: 52px;
+}
 }
