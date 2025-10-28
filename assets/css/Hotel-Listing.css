@@ -39,59 +39,43 @@ form .small-form {
 }
 
 .recording .search {
-    background-color: var(--primaryColor);
     height: fit-content;
-    padding: 8px;
+    padding: 7px;
     border-radius: 5px;
 }
 
-.sub-hero.search{
-    width: fit-content;
-}
-.search a .search-text {
+.search .search-text {
     display: none;
 }
 
-
+.sub-hero .recording svg {
+    margin-top: -10px;
+}
 
 
 @media screen and (max-width:1300px) {
 
 
     .recording input {
-        padding: 10px 60px 10px 5px;
+        padding: 10px 60px 10px 24px;
     }
 
-    form .trip {
+    form .small-form {
         padding: 10px 1px 10px 5px;
     }
 
-    .recording .arrow {
-        left: 190px;
-    }
 }
 
 
 @media screen and (max-width:992px) {
 
     .recording input {
-        padding: 10px 60px 10px 5px;
+        padding: 10px 60px 10px 24px;
     }
 
-    .recording .arrow {
-        left: 170px;
-    }
-
-    .search .btn {
-        padding: 0 8px;
-    }
 
     .subhero-form {
         display: block;
-    }
-
-    .recording .arrow-drop {
-        left: 175px;
     }
 
     .left-form {
@@ -102,18 +86,17 @@ form .small-form {
         display: block;
     }
 
-    .search .btn-flight {
+    .search .search-text {
         display: block;
 
     }
 
-    .search {
+    .recording .search {
         width: fit-content;
         margin: auto;
+        padding: 8px 12px;
         margin-top: 20px;
     }
-
-
 
 }
 
