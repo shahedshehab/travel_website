@@ -28,6 +28,10 @@ a {
     color: #FF8682;
 }
 
+.fit-content{
+    width: fit-content;
+}
+
 .light-secondary-color {
     color: #1122116d;
 }
