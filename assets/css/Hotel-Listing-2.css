@@ -102,3 +102,14 @@ right: 20px;
 }
 
 }
+
+.profile img{
+    object-position: center;
+}
+.omar img{
+    object-position: 20%;
+}
+.reviews{
+    margin-bottom: 150px;
+}
+

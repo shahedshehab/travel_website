@@ -193,11 +193,13 @@ a {
     }
 }
 
-.about .line {
-    width: 2px;
+.nav-line {
+    width: 1.5px;
     height: 15px;
     background-color: var(--secondaryColor);
 }
+
+
 
 .profile img {
     width: 45px;
