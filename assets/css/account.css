@@ -1,5 +1,10 @@
 body {
     background-color: #FAFBFC;
+    font-size: 16px;
+}
+
+.account-details{
+    margin-bottom: 170px;
 }
 
 .cover {
@@ -32,4 +37,11 @@ body {
 
 .sub-details{
     margin-top: 100px;
+}
+
+@media screen and (max-width:550px){
+ .btn {
+    --bs-btn-padding-x: 0.6rem;
+    --bs-btn-padding-y: 0.35rem;
+}
 }
