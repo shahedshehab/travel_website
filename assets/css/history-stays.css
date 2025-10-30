@@ -71,6 +71,8 @@ body {
 }
 .sub-ticket img{
     border: 1px solid var(--primaryColor);
+    object-position: center;
+    object-fit: fill;
 }
 
 @media screen and (max-width:768px) {
