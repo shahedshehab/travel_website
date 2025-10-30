@@ -43,6 +43,11 @@ body {
 .sub-details {
     margin-top: 100px;
 }
+.line{
+    width: 20px;
+    height: 3px;
+    background-color: var(--secondaryColor);
+}
 
 @media screen and (max-width:550px) {
     .btn {
@@ -53,7 +58,13 @@ body {
     .upload-btn {
         display: none;
     }
-    .vertical-line{
+    .vertical-line,.vertical-line-sub-ticket{
         display: none;
     }
+}
+
+.vertical-line-sub-ticket {
+    height: 80px;
+    width: 0.5px;
+    background-color: rgb(206, 200, 200);
 }

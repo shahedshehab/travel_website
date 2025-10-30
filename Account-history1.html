@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--my css file-->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/account-history.css">
+</head>
+
+<body>
+    <!-- start nabvar section -->
+    <nav class="navbar position-relative bg-white position-relative">
+        <div class="container justify-content-between">
+            <div class="reservation d-flex gap-3 ">
+                <div class="flight">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                        </svg>
+                    </a>
+                    <a class="find-flight text-decoration-none second-color fw-semibold" href="#">Find Flight</a>
+                </div>
+                <div class="stays">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
+                        </svg>
+                    </a>
+                    <a class="find-stay text-decoration-none second-color fw-semibold" href="#">Find Stays</a>
+                </div>
+            </div>
+            <a class="navbar-brand " href="#">
+                <img src="./assets/img/flights_search-page/navbar/Logo.png" alt="Logo" width="130" height="40"
+                    class="d-inline-block align-text-top">
+
+            </a>
+            <div class="about d-flex gap-3 align-items-center position-relative">
+                <div class="love">
+                    <a href="./Favourites.html"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#0b160b"
+                                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                        </svg></a>
+
+                    <a href="./Favourites.html" class="fav fw-semibold second-color text-decoration-none">Favourites</a>
+                </div>
+                <div class="nav-line"></div>
+                <div class="ps-2 profile">
+                    <img src="./assets/img/listing/profile-pic.webp" alt="profile picture" class="rounded-circle">
+                    <a href=""><svg class="rounded-circle position-absolute bottom-0" xmlns="http://www.w3.org/2000/svg"
+                            height="12" width="12"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#112211"
+                                d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
+                        </svg></a>
+                    <span class="fw-semibold ">John D.</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar section -->
+    <main>
+        <!-- start account profile section -->
+        <section class="account-profile">
+            <div class="container">
+                <div class="cover position-relative pt-5">
+                    <img src="./assets/img/account/cover.jpg" alt="" class="rounded-4 object-fit-cover w-100 h-100">
+                    <div class="account-img start-50 translate-middle-x position-absolute">
+                        <img src="./assets/img/listing/profile-pic.webp" alt="profile picture"
+                            class="rounded-circle mb-3" width="120" height="120">
+                        <a href=""><svg class="rounded-circle position-absolute top-50" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg" fill="#112211" stroke="#112211" width="20"
+                                height="20">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>ionicons-v5-k</title>
+                                    <polygon points="364.13 125.25 87 403 64 448 108.99 425 386.75 147.87 364.13 125.25"
+                                        style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px">
+                                    </polygon>
+                                    <path
+                                        d="M420.69,68.69,398.07,91.31l22.62,22.63,22.62-22.63a16,16,0,0,0,0-22.62h0A16,16,0,0,0,420.69,68.69Z"
+                                        style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px">
+                                    </path>
+                                </g>
+                            </svg></a>
+                        <div class="d-flex flex-column text-center">
+                            <span class="fs-4 fw-semibold">John Doe.</span>
+                            <span class="fs-14 light-secondary-color">john.doe@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="upload-btn position-absolute">
+                        <a href="" class="btn btn-primary fs-12 fw-semibold d-flex align-items-center gap-2 py-2">
+                            <svg width="12" height="12" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                                fill="#112211" stroke="#112211">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill="#000000"
+                                        d="M544 864V672h128L512 480 352 672h128v192H320v-1.6c-5.376.32-10.496 1.6-16 1.6A240 240 0 0 1 64 624c0-123.136 93.12-223.488 212.608-237.248A239.808 239.808 0 0 1 512 192a239.872 239.872 0 0 1 235.456 194.752c119.488 13.76 212.48 114.112 212.48 237.248a240 240 0 0 1-240 240c-5.376 0-10.56-1.28-16-1.6v1.6H544z">
+                                    </path>
+                                </g>
+                            </svg>Upload new cover
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end account profile section -->
+        <!-- start sub details section -->
+        <section class="sub-details py-5">
+            <div class="container">
+                <div class="row g-3 bg-white p-2 pb-4 rounded-4 shadow d-flex align-items-center m-auto">
+
+                    <div class="col-sm-4">
+                        <a class="fs-14 fw-semibold second-color" href="#">Account</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-flex gap-sm-2 align-items-center">
+                            <div class="vertical-line"></div>
+                            <a class="fs-14 fw-semibold second-color" href="#">Tickets/Bookings</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-flex gap-sm-2 align-items-center">
+                            <div class="vertical-line"></div>
+                            <a class="fs-14 fw-semibold second-color" href="#">Payment methods</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end sub details section -->
+        <!-- start History section -->
+        <section class="history py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center pb-3">
+                    <h1 class="fw-semibold fs-2">Tickets/Bookings</h1>
+                    <div class="d-flex gap-2">
+                        <p class="m-0 fs-6 fw-semibold">Upcoming</p>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#0b160b"
+                                    d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="row bg-white p-2 py-4 rounded-4 shadow d-flex align-items-center ">
+                    <div class="col-6">
+                        <a href="./index.html" class="text-decoration-none second-color fs-6 fw-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#0b160b"
+                                    d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+                            </svg>
+                            Flights</a>
+                    </div>
+                    <div class="col-6 d-flex gap-2 align-items-center">
+                        <div class="vertical-line"></div>
+                        <a href="./Hotel-Search.html" class="text-decoration-none second-color fs-6 fw-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path fill="#0b160b"
+                                    d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
+                            </svg>
+                            Stays</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end History section -->
+        <!-- width="22" height="22" -->
+        <!-- start sub-ticket section -->
+        <section class="sub-ticket py-5">
+            <div class="container">
+                <div class="row g-3 bg-white shadow p-3 pb-4 rounded-4">
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./assets/img/flight-detail/emirates.webp" alt="emirates"
+                                class="border rounded-3 p-2" width="80" height="80">
+                            <div class="time d-flex flex-column">
+                                <span class="light-secondary-color fs-12">Newark(EWR)</span>
+                                <span class="fs-6 fw-semibold">12:00 pm</span>
+                            </div>
+                            <div class="line"></div>
+                            <div class="time d-flex flex-column">
+                                <span class="light-secondary-color fs-12">Newark(EWR)</span>
+                                <span class="fs-6 fw-semibold">6:00 pm</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 d-flex gap-2">
+                        <div class="vertical-line-sub-ticket"></div>
+                        <div class="row g-2">
+                            <div class="col-6 d-flex gap-2">
+                                <svg width="32" height="32" viewBox="-2.4 -2.4 28.80 28.80" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                        <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="2.88" fill="#EBF6F2"
+                                            strokewidth="0"></rect>
+                                    </g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M7.75 2.5C7.75 2.08579 7.41421 1.75 7 1.75C6.58579 1.75 6.25 2.08579 6.25 2.5V4.07926C4.81067 4.19451 3.86577 4.47737 3.17157 5.17157C2.47737 5.86577 2.19451 6.81067 2.07926 8.25H21.9207C21.8055 6.81067 21.5226 5.86577 20.8284 5.17157C20.1342 4.47737 19.1893 4.19451 17.75 4.07926V2.5C17.75 2.08579 17.4142 1.75 17 1.75C16.5858 1.75 16.25 2.08579 16.25 2.5V4.0129C15.5847 4 14.839 4 14 4H10C9.16097 4 8.41527 4 7.75 4.0129V2.5Z"
+                                            fill="#8DD3BB"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 12C2 11.161 2 10.4153 2.0129 9.75H21.9871C22 10.4153 22 11.161 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12ZM17 14C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13C16 13.5523 16.4477 14 17 14ZM17 18C17.5523 18 18 17.5523 18 17C18 16.4477 17.5523 16 17 16C16.4477 16 16 16.4477 16 17C16 17.5523 16.4477 18 17 18ZM13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13ZM13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17ZM7 14C7.55228 14 8 13.5523 8 13C8 12.4477 7.55228 12 7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14ZM7 18C7.55228 18 8 17.5523 8 17C8 16.4477 7.55228 16 7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18Z"
+                                            fill="#8DD3BB"></path>
+                                    </g>
+                                </svg>
+                                <div class="d-flex flex-column">
+                                    <span class="light-secondary-color fs-12">Date</span>
+                                    <span class="fs-14 fw-semibold">12-11-22</span>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex gap-2">
+                                <svg width="32" height="32" viewBox="-4.8 -4.8 25.60 25.60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                        <rect x="-4.8" y="-4.8" width="25.60" height="25.60" rx="2.56" fill="#EBF6F2"
+                                            strokewidth="0"></rect>
+                                    </g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="0.032"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3 0H13V14H15V16H1V14H3V0ZM11 8C11 8.55229 10.5523 9 10 9C9.44772 9 9 8.55229 9 8C9 7.44772 9.44772 7 10 7C10.5523 7 11 7.44772 11 8Z"
+                                            fill="#8DD3BB"></path>
+                                    </g>
+                                </svg>
+                                <div class="d-flex flex-column">
+                                    <span class="light-secondary-color fs-12">Gate</span>
+                                    <span class="fs-14 fw-semibold">A12</span>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex gap-2">
+                                <a>
+<svg width="32" height="32" viewBox="-1.69 -1.69 11.85 11.85" id="svg8" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:svg="http://www.w3.org/2000/svg" fill="#8DD3BB">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                        <rect x="-1.69" y="-1.69" width="11.85" height="11.85" rx="1.185" fill="#EBF6F2"
+                                            strokewidth="0"></rect>
+                                    </g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <defs id="defs2"></defs>
+                                        <g id="layer1" transform="translate(0,-288.53332)">
+                                            <path
+                                                d="M 15.996094 1.0039062 C 7.7236777 1.0039062 0.99610868 7.7314657 0.99609375 16.003906 C 0.99608638 24.276347 7.7236618 31.003906 15.996094 31.003906 C 24.268526 31.003906 30.996101 24.276347 30.996094 16.003906 C 30.996079 7.7314657 24.26851 1.0039063 15.996094 1.0039062 z M 15.982422 4.9824219 A 1.0001001 1.0001001 0 0 1 17 6.0019531 L 17 15 L 23.998047 15 A 1.000252 1.000252 0 1 1 23.998047 17 L 15.996094 17 A 1.0001001 1.0001001 0 0 1 15 16.003906 L 15 6.0019531 A 1.0001001 1.0001001 0 0 1 15.982422 4.9824219 z "
+                                                id="path879"
+                                                style="color:#8DD3BB;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#8DD3BB;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#8DD3BB;solid-opacity:1;vector-effect:none;fill:#8DD3BB;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+                                                transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                </a>
+                                
+                                <div class="d-flex flex-column">
+                                    <span class="light-secondary-color fs-12">Flight time</span>
+                                    <span class="fs-14 fw-semibold">Newark(EWR)</span>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex gap-2">
+                                <svg fill="#8DD3BB" height="32" width="32" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="-25.6 -25.6 179.20 179.20" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                        <rect x="-25.6" y="-25.6" width="179.20" height="179.20" rx="17.92"
+                                            fill="#EBF6F2" strokewidth="0"></rect>
+                                    </g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M44.7,46.3c-2.1-13.7,17.6-17.8,20.8-3.9l5.4,26.8l20.1,0c5.8,0,8.9,4.7,8.9,9v36.4c0,8.9-12.6,8.8-12.6-0.2V86.2H61.6 c-6,0-9.7-4.1-10.6-8.8L44.7,46.3z">
+                                        </path>
+                                        <path
+                                            d="M54.1,30.3c6.5,0,11.8-5.2,11.9-11.8C66,12,60.7,6.7,54.1,6.7c-6.5,0-11.8,5.2-11.8,11.7C42.3,25,47.5,30.3,54.1,30.3">
+                                        </path>
+                                        <path
+                                            d="M28.4,60.6c-1.4-7.6,8.6-9.4,10-1.8l4.4,23.9c1,5,4.6,9.2,9.8,10.8c1.6,0.5,3.3,0.5,4.8,0.6l14.5,0.1 c7.7,0,7.7,10.1-0.1,10.1l-15.2-0.1c-2.3,0-4.7-0.3-7-1c-9-2.7-15.3-10.1-16.9-18.7L28.4,60.6z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="d-flex flex-column">
+                                    <span class="light-secondary-color fs-12">Seat no.</span>
+                                    <span class="fs-14 fw-semibold">128</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-center justify-content-lg-end">
+                        <div class="d-flex gap-2">
+                            <a href="" class="btn btn-primary fs-12 fw-semibold py-2">Download Ticket</a>
+                            <a href="" class="btn btn-primary bg-white d-flex align-items-center py-2"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path fill="#0b160b"
+                                        d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- start sub-ticket section -->
+    </main>
+</body>
+
+</html>
