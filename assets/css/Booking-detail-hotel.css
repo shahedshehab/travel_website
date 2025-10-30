@@ -1,0 +1,11 @@
+.card-content{
+    border: 1px solid var(--primaryColor);
+}
+@media screen and (max-width:770px){
+.end-card .check-in,.end-card .check-out{
+align-items: center;
+}
+.end-card .middle{
+    padding: 8px 0;
+}
+}

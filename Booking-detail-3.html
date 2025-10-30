@@ -2,209 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking detail</title>
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--bootstrap 5.3-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!--my css file-->
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/Booking-detail.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking detail</title>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--bootstrap 5.3-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--my css file-->
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/Booking-detail.css">
 </head>
 
 <body>
 
-    <!-- start nabvar section -->
-    <nav class="navbar position-relative bg-white position-relative">
-        <div class="container justify-content-between">
-            <div class="reservation d-flex gap-3 ">
-                <div class="flight">
-                    <a href="#" class="text-decoration-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path fill="#0b160b"
-                                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
-                        </svg>
-                    </a>
-                    <a class="find-flight text-decoration-none second-color fw-semibold" href="#">Find Flight</a>
-                </div>
-                <div class="stays">
-                    <a href="#" class="text-decoration-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path fill="#0b160b"
-                                d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
-                        </svg>
-                    </a>
-                    <a class="find-stay text-decoration-none second-color fw-semibold" href="#">Find Stays</a>
-                </div>
-            </div>
-            <a class="navbar-brand " href="#">
-                <img src="./assets/img/flights_search-page/navbar/Logo.png" alt="Logo" width="130" height="40"
-                    class="d-inline-block align-text-top">
-
-            </a>
-            <div class="about d-flex gap-3 align-items-center position-relative">
-                <div class="love">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#0b160b"
-                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
-                    </svg>
-                    <a href="#" class="fav fw-semibold second-color text-decoration-none">Favourites</a>
-                </div>
-                <div class="nav-line"></div>
-                <div class="ps-2 profile">
-                    <img src="./assets/img/listing/profile-pic.webp" alt="profile picture" class="rounded-circle">
-                    <a href=""><svg class="rounded-circle position-absolute bottom-0" xmlns="http://www.w3.org/2000/svg"
-                            height="12" width="12"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path fill="#112211"
-                                d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a>
-                    <span class="fw-semibold ">John D.</span>
-                </div>
-            </div>
+  <!-- start nabvar section -->
+  <nav class="navbar position-relative bg-white position-relative">
+    <div class="container justify-content-between">
+      <div class="reservation d-flex gap-3 ">
+        <div class="flight">
+          <a href="#" class="text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+              viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#0b160b"
+                d="M552 264C582.9 264 608 289.1 608 320C608 350.9 582.9 376 552 376L424.7 376L265.5 549.6C259.4 556.2 250.9 560 241.9 560L198.2 560C187.3 560 179.6 549.3 183 538.9L237.3 376L137.6 376L84.8 442C81.8 445.8 77.2 448 72.3 448L52.5 448C42.1 448 34.5 438.2 37 428.1L64 320L37 211.9C34.4 201.8 42.1 192 52.5 192L72.3 192C77.2 192 81.8 194.2 84.8 198L137.6 264L237.3 264L183 101.1C179.6 90.7 187.3 80 198.2 80L241.9 80C250.9 80 259.4 83.8 265.5 90.4L424.7 264L552 264z" />
+            </svg>
+          </a>
+          <a class="find-flight text-decoration-none second-color fw-semibold" href="#">Find Flight</a>
         </div>
-    </nav>
-    <!-- end navbar section -->
-    <main>
-        <section class="trip-overview">
-            <div class="container">
-                <div class="arrow-links d-flex gap-3 py-5 align-items-center">
-                    <a class="second-color fs-14" href="">Turkey</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#0b160b"
-                            d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
-                    </svg>
-                    <a class="second-color fs-14" href="">Istanbul</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
-                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#0b160b"
-                            d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
-                    </svg>
-                    <a class="second-color fs-14" href="">CVK Park Bosphorus Hotel Istanbul</a>
-                </div>
-            </div>
-        </section>
-        <section class="head">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-sm-6">
-                        <div class="left-head">
-                            <h1 class="fs-3">Emirates A380 Airbus</h1>
-                            <div class="d-flex gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path fill="#0b160b"
-                                        d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
-                                </svg>
-                                <p class="fs-14">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
-                            </div>
+        <div class="stays">
+          <a href="#" class="text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+              viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#0b160b"
+                d="M64 96C81.7 96 96 110.3 96 128L96 352L320 352L320 224C320 206.3 334.3 192 352 192L512 192C565 192 608 235 608 288L608 512C608 529.7 593.7 544 576 544C558.3 544 544 529.7 544 512L544 448L96 448L96 512C96 529.7 81.7 544 64 544C46.3 544 32 529.7 32 512L32 128C32 110.3 46.3 96 64 96zM144 256C144 220.7 172.7 192 208 192C243.3 192 272 220.7 272 256C272 291.3 243.3 320 208 320C172.7 320 144 291.3 144 256z" />
+            </svg>
+          </a>
+          <a class="find-stay text-decoration-none second-color fw-semibold" href="#">Find Stays</a>
+        </div>
+      </div>
+      <a class="navbar-brand " href="#">
+        <img src="./assets/img/flights_search-page/navbar/Logo.png" alt="Logo" width="130" height="40"
+          class="d-inline-block align-text-top">
 
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="right-head text-end d-flex flex-column gap-2">
-                            <h1 class="fw-semibold fs-2">$240</h1>
-                            <div class="btn-group gap-3 d-block">
-                                <a class="btn btn-outline-primary rounded-1" href="#"><svg
-                                        xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                                        viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                        <path fill="#0b160b"
-                                            d="M448 256C501 256 544 213 544 160C544 107 501 64 448 64C395 64 352 107 352 160C352 165.4 352.5 170.8 353.3 176L223.6 248.1C206.7 233.1 184.4 224 160 224C107 224 64 267 64 320C64 373 107 416 160 416C184.4 416 206.6 406.9 223.6 391.9L353.3 464C352.4 469.2 352 474.5 352 480C352 533 395 576 448 576C501 576 544 533 544 480C544 427 501 384 448 384C423.6 384 401.4 393.1 384.4 408.1L254.7 336C255.6 330.8 256 325.5 256 320C256 314.5 255.5 309.2 254.7 304L384.4 231.9C401.3 246.9 423.6 256 448 256z" />
-                                    </svg></a>
-                                <a href="./Booking-detail.html"
-                                    class="btn btn-primary rounded-2 fw-semibold ps-4 pe-4 py-2">Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </section>
-        <section class="ticket-card py-5">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                        <img src="./assets/img/Booking-detail/ticket/tacket.png" alt="ticket" class="w-100 h-100">
-                    </div>
-                    <div class="distance col-md-4">
-                        <img src="./assets/img/Booking-detail/ticket/distance.png" alt="distance" class="w-100 h-100">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="Terms-and-Conditions py-5">
-            <div class="container">
-                <h1 class="fs-4 fw-semibold pb-4">Terms and Conditions</h1>
-                <div class="payment">
-                    <h2 class="fs-6 pb-3">Payments</h2>
-                    <ul class="d-flex flex-column gap-2">
-                        <li class="fs-12">
-                            <p>If you are purchasing your ticket using a debit or credit card via the Website, we will
-                                process
-                                these payments via the automated secure common payment gateway which will be subject to
-                                fraud
-                                screening purposes. </p>
-                        </li>
-                        <li class="fs-12">
-                            <p>If you do not supply the correct card billing address and/or cardholder information, your
-                                booking
-                                will not be confirmed and the overall cost may increase. We reserve the right to cancel
-                                your
-                                booking if payment is declined for any reason or if you have supplied incorrect card
-                                information. If we become aware of, or is notified of, any fraud or illegal activity
-                                associated
-                                with the payment for the booking, the booking will be cancelled and you will be liable
-                                for all
-                                costs and expenses arising from such cancellation, without prejudice to any action that
-                                may be
-                                taken against us.</p>
-                        </li>
-                        <li class="fs-12">
-                            <p>Golobe may require the card holder to provide additional payment verification upon
-                                request by
-                                either submitting an online form or visiting the nearest Golobe office, or at the
-                                airport at the
-                                time of check-in. Golobe reserves the right to deny boarding or to collect a guarantee
-                                payment
-                                (in cash or from another credit card) if the card originally used for the purchase
-                                cannot be
-                                presented by the cardholder at check-in or when collecting the tickets, or in the case
-                                the
-                                original payment has been withheld or disputed by the card issuing bank. Credit card
-                                details are
-                                held in a secured environment and transferred through an internationally accepted
-                                system.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact d-flex flex-column gap-0">
-                    <h2 class="fs-6 pb-2">Contact Us</h2>
-                    <p class="fs-12 m-0">If you have any questions about our Website or our Terms of Use, please contact:</p>
-                    <p class="fs-12 m-0">Golobe Group Q.C.S.C</p>
-                    <p class="fs-12 m-0">Golobe Tower</p>
-                    <p class="fs-12 m-0">P.O. Box: 22550</p>
-                    <address class="fs-12 m-0">Doha, State of Qatar</address>
-                    <p class="fs-12 m-0">Further contact details can be found at <a href="./index.html" class="second-color">golobe.com/help</a> </p>
-                </div>
+      </a>
+      <div class="about d-flex gap-3 align-items-center position-relative">
+        <div class="love">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#0b160b"
+              d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+          </svg>
+          <a href="#" class="fav fw-semibold second-color text-decoration-none">Favourites</a>
+        </div>
+        <div class="nav-line"></div>
+        <div class="ps-2 profile">
+          <img src="./assets/img/listing/profile-pic.webp" alt="profile picture" class="rounded-circle">
+          <a href=""><svg class="rounded-circle position-absolute bottom-0" xmlns="http://www.w3.org/2000/svg"
+              height="12" width="12"
+              viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path fill="#112211"
+                d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
+            </svg></a>
+          <span class="fw-semibold ">John D.</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar section -->
+  <main>
+    <section class="trip-overview">
+      <div class="container">
+        <div class="arrow-links d-flex gap-3 py-5 align-items-center">
+          <a class="second-color fs-14" href="">Turkey</a>
+          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#0b160b"
+              d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
+          </svg>
+          <a class="second-color fs-14" href="">Istanbul</a>
+          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#0b160b"
+              d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
+          </svg>
+          <a class="second-color fs-14" href="">CVK Park Bosphorus Hotel Istanbul</a>
+        </div>
+      </div>
+    </section>
+    <section class="head">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-sm-6">
+            <div class="left-head">
+              <h1 class="fs-3">Emirates A380 Airbus</h1>
+              <div class="d-flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#0b160b"
+                    d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
+                </svg>
+                <p class="fs-14">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+              </div>
 
             </div>
-        </section>
-    </main>
+          </div>
+          <div class="col-sm-6">
+            <div class="right-head text-end d-flex flex-column gap-2">
+              <h1 class="fw-semibold fs-2">$240</h1>
+              <div class="btn-group gap-3 d-block">
+                <a class="btn btn-outline-primary rounded-1" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                    height="20" width="20"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#0b160b"
+                      d="M448 256C501 256 544 213 544 160C544 107 501 64 448 64C395 64 352 107 352 160C352 165.4 352.5 170.8 353.3 176L223.6 248.1C206.7 233.1 184.4 224 160 224C107 224 64 267 64 320C64 373 107 416 160 416C184.4 416 206.6 406.9 223.6 391.9L353.3 464C352.4 469.2 352 474.5 352 480C352 533 395 576 448 576C501 576 544 533 544 480C544 427 501 384 448 384C423.6 384 401.4 393.1 384.4 408.1L254.7 336C255.6 330.8 256 325.5 256 320C256 314.5 255.5 309.2 254.7 304L384.4 231.9C401.3 246.9 423.6 256 448 256z" />
+                  </svg></a>
+                <a href="./Booking-detail.html"
+                  class="btn btn-primary rounded-2 fw-semibold ps-4 pe-4 py-2">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-     <!-- start footer section -->
- 
+
+      </div>
+
+    </section>
+    <section class="ticket-card py-5">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <img src="./assets/img/Booking-detail/ticket/tacket.png" alt="ticket" class="w-100 h-100">
+          </div>
+          <div class="distance col-md-4">
+            <img src="./assets/img/Booking-detail/ticket/distance.png" alt="distance" class="w-100 h-100">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Terms-and-Conditions py-5">
+      <div class="container">
+        <h1 class="fs-4 fw-semibold pb-4">Terms and Conditions</h1>
+        <div class="payment">
+          <h2 class="fs-6 pb-3">Payments</h2>
+          <ul class="d-flex flex-column gap-2">
+            <li class="fs-12">
+              <p>If you are purchasing your ticket using a debit or credit card via the Website, we will
+                process
+                these payments via the automated secure common payment gateway which will be subject to
+                fraud
+                screening purposes. </p>
+            </li>
+            <li class="fs-12">
+              <p>If you do not supply the correct card billing address and/or cardholder information, your
+                booking
+                will not be confirmed and the overall cost may increase. We reserve the right to cancel
+                your
+                booking if payment is declined for any reason or if you have supplied incorrect card
+                information. If we become aware of, or is notified of, any fraud or illegal activity
+                associated
+                with the payment for the booking, the booking will be cancelled and you will be liable
+                for all
+                costs and expenses arising from such cancellation, without prejudice to any action that
+                may be
+                taken against us.</p>
+            </li>
+            <li class="fs-12">
+              <p>Golobe may require the card holder to provide additional payment verification upon
+                request by
+                either submitting an online form or visiting the nearest Golobe office, or at the
+                airport at the
+                time of check-in. Golobe reserves the right to deny boarding or to collect a guarantee
+                payment
+                (in cash or from another credit card) if the card originally used for the purchase
+                cannot be
+                presented by the cardholder at check-in or when collecting the tickets, or in the case
+                the
+                original payment has been withheld or disputed by the card issuing bank. Credit card
+                details are
+                held in a secured environment and transferred through an internationally accepted
+                system.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact d-flex flex-column gap-0">
+          <h2 class="fs-6 pb-2">Contact Us</h2>
+          <p class="fs-12 m-0">If you have any questions about our Website or our Terms of Use, please contact:</p>
+          <p class="fs-12 m-0">Golobe Group Q.C.S.C</p>
+          <p class="fs-12 m-0">Golobe Tower</p>
+          <p class="fs-12 m-0">P.O. Box: 22550</p>
+          <address class="fs-12 m-0">Doha, State of Qatar</address>
+          <p class="fs-12 m-0">Further contact details can be found at <a href="./index.html"
+              class="second-color">golobe.com/help</a> </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- start footer section -->
   <footer class="footer">
     <div class="start-50 top-0 translate-middle sub-footer">
       <div class="container-fluid d-flex justify-content-between">
@@ -232,26 +232,26 @@
             <img src="./assets/img/Home-page/footer/Logo-dark.webp" alt="Logo">
             <div class="social-media">
               <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path fill="#0b160b"
-                  d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z" />
-              </svg></a>
+                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#0b160b"
+                    d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z" />
+                </svg></a>
               <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path fill="#0b160b"
-                  d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z" />
-              </svg></a>
+                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#0b160b"
+                    d="M523.4 215.7C523.7 220.2 523.7 224.8 523.7 229.3C523.7 368 418.1 527.9 225.1 527.9C165.6 527.9 110.4 510.7 64 480.8C72.4 481.8 80.6 482.1 89.3 482.1C138.4 482.1 183.5 465.5 219.6 437.3C173.5 436.3 134.8 406.1 121.5 364.5C128 365.5 134.5 366.1 141.3 366.1C150.7 366.1 160.1 364.8 168.9 362.5C120.8 352.8 84.8 310.5 84.8 259.5L84.8 258.2C98.8 266 115 270.9 132.2 271.5C103.9 252.7 85.4 220.5 85.4 184.1C85.4 164.6 90.6 146.7 99.7 131.1C151.4 194.8 229 236.4 316.1 240.9C314.5 233.1 313.5 225 313.5 216.9C313.5 159.1 360.3 112 418.4 112C448.6 112 475.9 124.7 495.1 145.1C518.8 140.6 541.6 131.8 561.7 119.8C553.9 144.2 537.3 164.6 515.6 177.6C536.7 175.3 557.2 169.5 576 161.4C561.7 182.2 543.8 200.7 523.4 215.7z" />
+                </svg></a>
               <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path fill="#0b160b"
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg></a>
+                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#0b160b"
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
+                </svg></a>
               <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
-                viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path fill="#0b160b"
-                  d="M290.4 275.7C274 286 264.5 304.5 265.5 323.8C266.6 343.2 278.2 360.4 295.6 368.9C313.1 377.3 333.8 375.5 349.6 364.3C366 354 375.5 335.5 374.5 316.2C373.4 296.8 361.8 279.6 344.4 271.1C326.9 262.7 306.2 264.5 290.4 275.7zM432.7 207.3C427.5 202.1 421.2 198 414.3 195.3C396.2 188.2 356.7 188.5 331.2 188.8C327.1 188.8 323.3 188.9 320 188.9C316.7 188.9 312.8 188.9 308.6 188.8C283.1 188.5 243.8 188.1 225.7 195.3C218.8 198 212.6 202.1 207.3 207.3C202 212.5 198 218.8 195.3 225.7C188.2 243.8 188.6 283.4 188.8 308.9C188.8 313 188.9 316.8 188.9 320C188.9 323.2 188.9 327 188.8 331.1C188.6 356.6 188.2 396.2 195.3 414.3C198 421.2 202.1 427.4 207.3 432.7C212.5 438 218.8 442 225.7 444.7C243.8 451.8 283.3 451.5 308.8 451.2C312.9 451.2 316.7 451.1 320 451.1C323.3 451.1 327.2 451.1 331.4 451.2C356.9 451.5 396.2 451.9 414.3 444.7C421.2 442 427.4 437.9 432.7 432.7C438 427.5 442 421.2 444.7 414.3C451.9 396.3 451.5 356.9 451.2 331.3C451.2 327.1 451.1 323.2 451.1 319.9C451.1 316.6 451.1 312.8 451.2 308.5C451.5 283 451.9 243.6 444.7 225.5C442 218.6 437.9 212.4 432.7 207.1L432.7 207.3zM365.6 251.8C383.7 263.9 396.2 282.7 400.5 304C404.8 325.3 400.3 347.5 388.2 365.6C382.2 374.6 374.5 382.2 365.6 388.2C356.7 394.2 346.6 398.3 336 400.4C314.7 404.6 292.5 400.2 274.4 388.1C256.3 376 243.8 357.2 239.5 335.9C235.2 314.6 239.7 292.4 251.7 274.3C263.7 256.2 282.6 243.7 303.9 239.4C325.2 235.1 347.4 239.6 365.5 251.6L365.6 251.6zM394.8 250.5C391.7 248.4 389.2 245.4 387.7 241.9C386.2 238.4 385.9 234.6 386.6 230.8C387.3 227 389.2 223.7 391.8 221C394.4 218.3 397.9 216.5 401.6 215.8C405.3 215.1 409.2 215.4 412.7 216.9C416.2 218.4 419.2 220.8 421.3 223.9C423.4 227 424.5 230.7 424.5 234.5C424.5 237 424 239.5 423.1 241.8C422.2 244.1 420.7 246.2 419 248C417.3 249.8 415.1 251.2 412.8 252.2C410.5 253.2 408 253.7 405.5 253.7C401.7 253.7 398 252.6 394.9 250.5L394.8 250.5zM544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM453 453C434.3 471.7 411.6 477.6 386 478.9C359.6 480.4 280.4 480.4 254 478.9C228.4 477.6 205.7 471.7 187 453C168.3 434.3 162.4 411.6 161.2 386C159.7 359.6 159.7 280.4 161.2 254C162.5 228.4 168.3 205.7 187 187C205.7 168.3 228.5 162.4 254 161.2C280.4 159.7 359.6 159.7 386 161.2C411.6 162.5 434.3 168.3 453 187C471.7 205.7 477.6 228.4 478.8 254C480.3 280.3 480.3 359.4 478.8 385.9C477.5 411.5 471.7 434.2 453 452.9L453 453z" />
-              </svg></a>
-              
+                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#0b160b"
+                    d="M290.4 275.7C274 286 264.5 304.5 265.5 323.8C266.6 343.2 278.2 360.4 295.6 368.9C313.1 377.3 333.8 375.5 349.6 364.3C366 354 375.5 335.5 374.5 316.2C373.4 296.8 361.8 279.6 344.4 271.1C326.9 262.7 306.2 264.5 290.4 275.7zM432.7 207.3C427.5 202.1 421.2 198 414.3 195.3C396.2 188.2 356.7 188.5 331.2 188.8C327.1 188.8 323.3 188.9 320 188.9C316.7 188.9 312.8 188.9 308.6 188.8C283.1 188.5 243.8 188.1 225.7 195.3C218.8 198 212.6 202.1 207.3 207.3C202 212.5 198 218.8 195.3 225.7C188.2 243.8 188.6 283.4 188.8 308.9C188.8 313 188.9 316.8 188.9 320C188.9 323.2 188.9 327 188.8 331.1C188.6 356.6 188.2 396.2 195.3 414.3C198 421.2 202.1 427.4 207.3 432.7C212.5 438 218.8 442 225.7 444.7C243.8 451.8 283.3 451.5 308.8 451.2C312.9 451.2 316.7 451.1 320 451.1C323.3 451.1 327.2 451.1 331.4 451.2C356.9 451.5 396.2 451.9 414.3 444.7C421.2 442 427.4 437.9 432.7 432.7C438 427.5 442 421.2 444.7 414.3C451.9 396.3 451.5 356.9 451.2 331.3C451.2 327.1 451.1 323.2 451.1 319.9C451.1 316.6 451.1 312.8 451.2 308.5C451.5 283 451.9 243.6 444.7 225.5C442 218.6 437.9 212.4 432.7 207.1L432.7 207.3zM365.6 251.8C383.7 263.9 396.2 282.7 400.5 304C404.8 325.3 400.3 347.5 388.2 365.6C382.2 374.6 374.5 382.2 365.6 388.2C356.7 394.2 346.6 398.3 336 400.4C314.7 404.6 292.5 400.2 274.4 388.1C256.3 376 243.8 357.2 239.5 335.9C235.2 314.6 239.7 292.4 251.7 274.3C263.7 256.2 282.6 243.7 303.9 239.4C325.2 235.1 347.4 239.6 365.5 251.6L365.6 251.6zM394.8 250.5C391.7 248.4 389.2 245.4 387.7 241.9C386.2 238.4 385.9 234.6 386.6 230.8C387.3 227 389.2 223.7 391.8 221C394.4 218.3 397.9 216.5 401.6 215.8C405.3 215.1 409.2 215.4 412.7 216.9C416.2 218.4 419.2 220.8 421.3 223.9C423.4 227 424.5 230.7 424.5 234.5C424.5 237 424 239.5 423.1 241.8C422.2 244.1 420.7 246.2 419 248C417.3 249.8 415.1 251.2 412.8 252.2C410.5 253.2 408 253.7 405.5 253.7C401.7 253.7 398 252.6 394.9 250.5L394.8 250.5zM544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM453 453C434.3 471.7 411.6 477.6 386 478.9C359.6 480.4 280.4 480.4 254 478.9C228.4 477.6 205.7 471.7 187 453C168.3 434.3 162.4 411.6 161.2 386C159.7 359.6 159.7 280.4 161.2 254C162.5 228.4 168.3 205.7 187 187C205.7 168.3 228.5 162.4 254 161.2C280.4 159.7 359.6 159.7 386 161.2C411.6 162.5 434.3 168.3 453 187C471.7 205.7 477.6 228.4 478.8 254C480.3 280.3 480.3 359.4 478.8 385.9C477.5 411.5 471.7 434.2 453 452.9L453 453z" />
+                </svg></a>
+
 
             </div>
           </div>
@@ -319,14 +319,13 @@
     </div>
 
   </footer>
-
   <!-- end footer section -->
 
 
-    <!--bootstrap 5.3-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <!--bootstrap 5.3-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </body>
 
