@@ -43,7 +43,8 @@ body {
 .sub-details {
     margin-top: 100px;
 }
-.line{
+
+.line {
     width: 20px;
     height: 3px;
     background-color: var(--secondaryColor);
@@ -58,13 +59,33 @@ body {
     .upload-btn {
         display: none;
     }
-    .vertical-line,.vertical-line-sub-ticket{
-        display: none;
-    }
+
+}
+.sub-tickets{
+    margin-bottom: 200px;
 }
 
 .vertical-line-sub-ticket {
     height: 80px;
     width: 0.5px;
     background-color: rgb(206, 200, 200);
+}
+.sub-ticket img{
+    border: 1px solid var(--primaryColor);
+}
+
+@media screen and (max-width:768px) {
+    .vertical-line-sub-ticket {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 14px;
+    }
+
+    .account-img svg {
+        right: 15px;
+    }
 }
