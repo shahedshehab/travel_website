@@ -274,16 +274,14 @@ p {
     display: none;
 }
 
-/* .heart svg{
-transition: all 0.9s;
-} */
+
 
 .heart:hover .heart-befor {
   display: none;  
 }
 
 .heart:hover .heart-after {
-  display: inline;
+  display: block;
 }
 
 .btn .btn-primary{
