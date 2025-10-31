@@ -60,7 +60,8 @@ body {
     }
 
 }
-.sub-tickets{
+
+.sub-tickets {
     margin-bottom: 200px;
 }
 
@@ -69,7 +70,8 @@ body {
     width: 0.5px;
     background-color: rgb(206, 200, 200);
 }
-.sub-ticket img{
+
+.sub-ticket img {
     border: 1px solid var(--primaryColor);
     object-position: center;
     object-fit: fill;
@@ -88,5 +90,25 @@ body {
 
     .account-img svg {
         right: 15px;
+    }
+}
+
+.profile-modal .modal-dialog {
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px) {
+    .profile-modal .modal-dialog {
+        right: 125px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .profile-modal .modal-dialog {
+        right: -8px;
+        top: 52px;
     }
 }

@@ -1,7 +1,5 @@
-
-
 .body_bg {
-    background-image: url("../img/Home-page/nav-hero/home-img.webp");
+    background: linear-gradient(to left, #0000005a, #0000005a), url("../img/Home-page/nav-hero/home-img.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,8 +7,6 @@
     margin: 30px;
     border-radius: 20px;
     font-family: "Montserrat", sans-serif;
-    opacity: .95;
-    /*filter: brightness(.75);*/
 }
 
 .home-btn .btn {
@@ -61,7 +57,11 @@
     width: 80px;
     height: 3px;
     margin-left: 18px;
+    display: none;
+}
 
+.Flight:hover+.under_line {
+    display: block;
 }
 
 .subhero-form,
@@ -136,7 +136,7 @@ form .trip {
     }
 
     .recording .arrow {
-        left: 190px;
+        left: 185px;
     }
 }
 
@@ -157,8 +157,8 @@ form .trip {
         border-radius: 5px;
     }
 
-    .flight,
-    .stays {
+    .find-flight,
+    .find-stays {
         display: none;
     }
 
@@ -202,9 +202,9 @@ form .trip {
         left: 170px;
     }
 
-    
-    
-    
+
+
+
 }
 
 @media screen and (max-width:620px) {
@@ -222,16 +222,19 @@ form .trip {
         font-size: 40px;
     }
 
-    .left-form,
-    .right-form {
+    .sub-hero {
+        bottom: -70px;
+    }
+
+    .recording {
         display: none;
     }
 
-    
-
-    .sub-hero .btn-flight .btn-primary {
-        justify-items: center;
-        margin: 0 0 10px 40px;
+    .sub-hero.promo{
+        width: 100%;
+    }
+    .sub-hero .show-flight {
+        margin: auto;
     }
 
 
@@ -264,12 +267,13 @@ form .trip {
     display: none;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
     .suggested-places h5 {
         font-size: 15px;
     }
 
-    .suggested-places a,span {
+    .suggested-places a,
+    span {
         font-size: 12px;
     }
 }
@@ -279,7 +283,8 @@ form .trip {
         font-size: 13px;
     }
 
-    .suggested-places a,span {
+    .suggested-places a,
+    span {
         font-size: 10px;
     }
 
@@ -310,9 +315,10 @@ form .trip {
     .suggested-places .col-md-3 img {
         padding: 0;
     }
-    .suggested-places .card{
-        
-       width:fit-content;
+
+    .suggested-places .card {
+
+        width: fit-content;
     }
 }
 
@@ -344,4 +350,3 @@ form .trip {
     box-shadow: 15px 15px 2px #8dd3baa0;
 
 }
-

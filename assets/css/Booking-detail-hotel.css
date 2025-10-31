@@ -9,3 +9,50 @@ align-items: center;
     padding: 8px 0;
 }
 }
+.profile-modal .modal-dialog {
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px) {
+    .profile-modal .modal-dialog {
+        right: 125px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .profile-modal .modal-dialog {
+        right: -8px;
+        top: 52px;
+    }
+}
+
+.visa-modal .modal-body .visa {
+    right: 1rem;
+    top: 1rem;
+}
+
+.visa-modal .modal-body label {
+    left: 10px;
+    top: -12px;
+    padding: 5px;
+}
+
+.visa-modal .modal-body .arrow-down {
+    right: 1rem;
+}
+
+.visa-modal .modal-body .label-half-width {
+    left: 245px;
+    width: fit-content;
+}
+
+@media screen and (max-width:768px) {
+    .visa-modal .modal-body .label-half-width {
+        left: 10px;
+        top: 70px;
+    }
+
+}

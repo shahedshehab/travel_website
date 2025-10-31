@@ -36,7 +36,7 @@ nav .user {
 }
 
 .hero {
-    background-image: url("../img/flights_search-page/hero/airplane.webp");
+    background-image: linear-gradient(to left, #00234d1e, #00234db0),url("../img/flights_search-page/hero/airplane.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;

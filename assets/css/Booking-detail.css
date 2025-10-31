@@ -109,15 +109,17 @@ input[type="radio"]::before {
     }
 }
 
-.pay-full,.pay-part,.visa-card{
+.pay-full,
+.pay-part,
+.visa-card {
     transition: all 0.8s;
 }
 
 .pay-full:hover,
 .pay-part:hover,
 .visa-card:hover {
-  background-color: var(--primaryColor);
-  border-radius: 8px;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
 }
 
 .booking {
@@ -157,25 +159,7 @@ input[type="radio"]::before {
     color: #112211a1;
 }
 
-.modal-body .visa {
-    right: 1rem;
-    top: 1rem;
-}
 
-.modal-body label {
-    left: 10px;
-    top: -12px;
-    padding: 5px;
-}
-
-.modal-body .arrow-down {
-    right: 1rem;
-}
-
-.modal-body .label-half-width {
-    left: 245px;
-    width: fit-content;
-}
 
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -204,14 +188,55 @@ input[type="checkbox"]:checked::after {
     left: 3px;
 }
 
+
+.Terms-and-Conditions {
+    margin-bottom: 150px;
+}
+
+.profile-modal .modal-dialog {
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px) {
+    .profile-modal .modal-dialog {
+        right: 125px;
+        top: 40px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .profile-modal .modal-dialog {
+        right: -8px;
+        top: 52px;
+    }
+}
+
+.visa-modal .modal-body .visa {
+    right: 1rem;
+    top: 1rem;
+}
+
+.visa-modal .modal-body label {
+    left: 10px;
+    top: -12px;
+    padding: 5px;
+}
+
+.visa-modal .modal-body .arrow-down {
+    right: 1rem;
+}
+
+.visa-modal .modal-body .label-half-width {
+    left: 245px;
+    width: fit-content;
+}
+
 @media screen and (max-width:768px) {
-    .modal-body .label-half-width {
+    .visa-modal .modal-body .label-half-width {
         left: 10px;
         top: 70px;
     }
 
-}
-
-.Terms-and-Conditions {
-    margin-bottom: 150px;
 }

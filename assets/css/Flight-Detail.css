@@ -147,3 +147,21 @@ input[type="checkbox"]:checked::after {
         font-size: 14px;
     }
 }
+.modal-dialog{
+    width: 320px;
+    right: 175px;
+    top: 40px;
+}
+
+@media screen and (max-width:750px){
+    .modal-dialog{
+    right: 125px;
+    top: 40px;
+}
+}
+@media screen and (max-width:560px){
+    .modal-dialog{
+    right: -8px;
+    top: 52px;
+}
+}
