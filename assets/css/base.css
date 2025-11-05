@@ -28,7 +28,7 @@ a {
     color: #FF8682;
 }
 
-.fit-content{
+.fit-content {
     width: fit-content;
 }
 
@@ -239,5 +239,25 @@ a {
 
     .profile svg {
         right: 0;
+    }
+}
+
+.animation-left {
+    animation-name: SlideInLeft;
+    animation-duration: 2s;
+    transform: translateX(0);
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes SlideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

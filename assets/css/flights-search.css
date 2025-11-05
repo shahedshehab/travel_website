@@ -36,7 +36,7 @@ nav .user {
 }
 
 .hero {
-    background-image: linear-gradient(to left, #00234d1e, #00234db0),url("../img/flights_search-page/hero/airplane.webp");
+    background-image: linear-gradient(to left, #00234d1e, #00234db0), url("../img/flights_search-page/hero/airplane.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -235,17 +235,17 @@ form .trip {
     .btn.promo-code {
         display: none;
     }
-    
+
 }
 
 .map-places {
     margin-top: 150px;
 }
 
-@media screen and (max-width:770px){
+@media screen and (max-width:770px) {
     .map-places {
-    margin-top: 100px;
-}
+        margin-top: 100px;
+    }
 }
 
 .right-side .btn {
@@ -269,7 +269,7 @@ form .trip {
         padding: 10px 5px;
 
     }
-    
+
 }
 
 .choices .card {
@@ -321,7 +321,6 @@ form .trip {
 }
 
 
-
 @media screen and (max-width:1400px) {
 
     .Backpacking .up img,
@@ -340,4 +339,12 @@ form .trip {
     .Backpacking .content h1 {
         font-size: 20px;
     }
+}
+
+.travel {
+    transition: all .9s;
+}
+
+.travel:hover {
+    transform: scale(1.02);
 }

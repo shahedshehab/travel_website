@@ -335,3 +335,9 @@ form .trip {
     box-shadow: 15px 15px 2px #8dd3baa0;
 
 }
+.trip{
+    transition: all .9s;
+}
+.trip:hover{
+    transform: scale(1.05);
+}

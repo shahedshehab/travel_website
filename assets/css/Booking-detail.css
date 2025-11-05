@@ -74,6 +74,7 @@ input[type="radio"] {
     /* ...existing styles */
     display: grid;
     place-content: center;
+    accent-color:gray;
 }
 
 input[type="radio"]::before {
@@ -82,7 +83,6 @@ input[type="radio"]::before {
     height: 1rem;
     border-radius: 50%;
 }
-
 
 
 .middle-line {
